@@ -1,0 +1,7 @@
+# Isolated evaluation environment; do not install into the application venv.
+ragas==0.4.3
+langchain==0.3.27
+langchain-core==0.3.80
+langchain-community==0.3.31
+langchain-openai==0.3.35
+jiter==0.14.0

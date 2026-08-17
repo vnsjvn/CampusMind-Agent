@@ -1,0 +1,3162 @@
+{
+  "createdAt": "2026-08-05T03:01:51.941851",
+  "metrics": {
+    "totalCases": 60,
+    "topK": 4,
+    "recallAtK": 0.9666666666666667,
+    "precisionAtK": 0.6458333333333334,
+    "mrr": 0.9083333333333333,
+    "ndcgAtK": 0.9052540438636218,
+    "hitRate": 0.9666666666666667
+  },
+  "results": [
+    {
+      "id": "risk-high-self-harm-direct",
+      "question": "学生明确说想自杀或者伤害自己时，系统应该怎么处理？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "HIGH",
+        "self-harm",
+        "suicide",
+        "alert"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.7126192451642964,
+          "relevant": true,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        },
+        {
+          "rank": 2,
+          "chunkId": 7,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.44455771657890575,
+          "relevant": true,
+          "preview": "气，6 拍呼气，连续 5 轮。重点是延长呼气，而不是憋气。如果学生正在明显恐慌，不要要求复杂步骤，可以只说“把双脚踩在地面上，慢慢呼气，比吸气长一点”。 ## 焦虑认知整理 当身体稍微稳定后，可以帮助学生区分事实、猜测和下一步。事实是已经发生或可以验证的信息，例如“明天有考试”“还有三章没复习”。猜测是大脑为了保护自己"
+        },
+        {
+          "rank": 3,
+          "chunkId": 16,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.2812843240946819,
+          "relevant": true,
+          "preview": "以记录：困扰从什么时候开始，最近是否有重大事件，睡眠和食欲变化，学习生活受影响程度，是否出现 self-harm 自伤或 suicide 自杀想法，已经尝试过哪些方法，希望咨询师帮助解决什么。记录不需要完整，几条关键词就够。 如果学生担心“我说不清楚”，可以建议把和 MindBridge 的对话要点整理成三段：我最近的"
+        },
+        {
+          "rank": 4,
+          "chunkId": 15,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.24808836642779775,
+          "relevant": true,
+          "preview": "# 咨询转介、校园资源与求助准备 MindBridge 的重要任务之一是把学生连接到现实中的支持系统。校园心理问题不应只停留在 AI 对话里。默认资源包括辅导员、学院老师、校园心理中心、校医院、班主任、宿舍管理员、校园保卫、可信任同学、家人和当地紧急服务。具体电话和地址应由学校部署时替换为本校信息。 ## 什么时候建议"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 1.0,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-high-suicide-plan",
+      "question": "如果学生说已经想好了自杀计划，这在风险策略里属于什么等级？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "HIGH",
+        "suicide",
+        "plans",
+        "immediate danger"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.688310389921434,
+          "relevant": true,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        },
+        {
+          "rank": 2,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.5377373730316002,
+          "relevant": true,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        },
+        {
+          "rank": 3,
+          "chunkId": 16,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.4680657698493974,
+          "relevant": true,
+          "preview": "以记录：困扰从什么时候开始，最近是否有重大事件，睡眠和食欲变化，学习生活受影响程度，是否出现 self-harm 自伤或 suicide 自杀想法，已经尝试过哪些方法，希望咨询师帮助解决什么。记录不需要完整，几条关键词就够。 如果学生担心“我说不清楚”，可以建议把和 MindBridge 的对话要点整理成三段：我最近的"
+        },
+        {
+          "rank": 4,
+          "chunkId": 28,
+          "source": "risk-policy.md",
+          "score": 0.436167724545262,
+          "relevant": true,
+          "preview": "suggesting immediate danger. When risk is HIGH, the system records the report, writes it to the Excel ledger through MCP tools, then sends an alert to counselor"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 1.0,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-high-hurt-others",
+      "question": "学生表示打算伤害别人，RAG 应该检索到哪类风险处置规则？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "HIGH",
+        "hurt oneself or others",
+        "immediate danger",
+        "alert"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.6469118503099034,
+          "relevant": true,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        },
+        {
+          "rank": 2,
+          "chunkId": 31,
+          "source": "risk-policy.md",
+          "score": 0.5144131211640041,
+          "relevant": true,
+          "preview": "救助；不要进行长篇追问导致延误。 ## 回复边界 对高风险学生，不应使用责备、挑战、激将或道德评判，例如“你不能这么自私”“你这样会伤害别人”。也不要和学生争辩“活着有什么意义”。更合适的是承认痛苦并拉近现实支持：“我很担心你现在的安全。请先把可能伤害自己的物品放远，去到有人在的地方，并马上联系辅导员或紧急服务。我会把"
+        },
+        {
+          "rank": 3,
+          "chunkId": 12,
+          "source": "campus-mental-health.md",
+          "score": 0.5109261107240067,
+          "relevant": false,
+          "preview": "诉、或者需要把混乱感受整理成可执行下一步时，提供稳定、温和、可操作的支持。 默认回复风格应保持平静、非评判、尊重自主。不要说“你想太多了”“别人都能做到”“你应该马上振作起来”这类否定性表达。更合适的表达是：“听起来你已经撑了一段时间”“我们先把最难受的部分降一点点”“如果这个状态持续，找一个现实中的支持者会更安全”。"
+        },
+        {
+          "rank": 4,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.5039893860097899,
+          "relevant": false,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.5,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-high-severe-hopelessness",
+      "question": "一个学生反复表达严重绝望，还暗示自己撑不下去了，风险等级应如何判断？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "HIGH",
+        "severe hopelessness",
+        "immediate danger",
+        "human support"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.6586085635318244,
+          "relevant": true,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        },
+        {
+          "rank": 2,
+          "chunkId": 15,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.5569069385737093,
+          "relevant": false,
+          "preview": "# 咨询转介、校园资源与求助准备 MindBridge 的重要任务之一是把学生连接到现实中的支持系统。校园心理问题不应只停留在 AI 对话里。默认资源包括辅导员、学院老师、校园心理中心、校医院、班主任、宿舍管理员、校园保卫、可信任同学、家人和当地紧急服务。具体电话和地址应由学校部署时替换为本校信息。 ## 什么时候建议"
+        },
+        {
+          "rank": 3,
+          "chunkId": 28,
+          "source": "risk-policy.md",
+          "score": 0.5518410165194643,
+          "relevant": true,
+          "preview": "suggesting immediate danger. When risk is HIGH, the system records the report, writes it to the Excel ledger through MCP tools, then sends an alert to counselor"
+        },
+        {
+          "rank": 4,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.43882086825581673,
+          "relevant": true,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.75,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 0.9060254355346822
+    },
+    {
+      "id": "risk-high-immediate-danger",
+      "question": "哪些语言会被视为 immediate danger，需要进入高风险流程？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "HIGH",
+        "immediate danger",
+        "self-harm",
+        "suicide"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 13,
+          "source": "campus-mental-health.md",
+          "score": 0.6975397209918731,
+          "relevant": true,
+          "preview": "诉、或者需要把混乱感受整理成可执行下一步时，提供稳定、温和、可操作的支持。 默认回复风格应保持平静、非评判、尊重自主。不要说“你想太多了”“别人都能做到”“你应该马上振作起来”这类否定性表达。更合适的表达是：“听起来你已经撑了一段时间”“我们先把最难受的部分降一点点”“如果这个状态持续，找一个现实中的支持者会更安全”。"
+        },
+        {
+          "rank": 2,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.6756466062119869,
+          "relevant": true,
+          "preview": "生尽快联系辅导员、心理中心、校医院、可信任老师或家人；帮助学生制定 24 小时内的支持计划；鼓励减少独处和高压力环境；询问是否有让自己受伤的想法。如果学生透露自伤或自杀念头、计划、工具或无法保证安全，应立即升级为 HIGH。 ## HIGH 高风险 HIGH 高风险包括明确提到 self-harm 自伤、suicide"
+        },
+        {
+          "rank": 3,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.6006244796471083,
+          "relevant": false,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        },
+        {
+          "rank": 4,
+          "chunkId": 16,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.3821971787903352,
+          "relevant": true,
+          "preview": "以记录：困扰从什么时候开始，最近是否有重大事件，睡眠和食欲变化，学习生活受影响程度，是否出现 self-harm 自伤或 suicide 自杀想法，已经尝试过哪些方法，希望咨询师帮助解决什么。记录不需要完整，几条关键词就够。 如果学生担心“我说不清楚”，可以建议把和 MindBridge 的对话要点整理成三段：我最近的"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.75,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 0.9674679834891693
+    },
+    {
+      "id": "risk-high-record-report",
+      "question": "高风险学生出现后，系统是否需要记录心理报告？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "HIGH",
+        "records the report",
+        "心理报告",
+        "Excel"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.7143617706993822,
+          "relevant": true,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        },
+        {
+          "rank": 2,
+          "chunkId": 28,
+          "source": "risk-policy.md",
+          "score": 0.38877022060406136,
+          "relevant": true,
+          "preview": "suggesting immediate danger. When risk is HIGH, the system records the report, writes it to the Excel ledger through MCP tools, then sends an alert to counselor"
+        },
+        {
+          "rank": 3,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.36662121716847773,
+          "relevant": false,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        },
+        {
+          "rank": 4,
+          "chunkId": 15,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.34567839531580036,
+          "relevant": false,
+          "preview": "# 咨询转介、校园资源与求助准备 MindBridge 的重要任务之一是把学生连接到现实中的支持系统。校园心理问题不应只停留在 AI 对话里。默认资源包括辅导员、学院老师、校园心理中心、校医院、班主任、宿舍管理员、校园保卫、可信任同学、家人和当地紧急服务。具体电话和地址应由学校部署时替换为本校信息。 ## 什么时候建议"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.5,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-high-excel-ledger",
+      "question": "HIGH 风险事件为什么要写入 Excel 台账？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "HIGH",
+        "Excel ledger",
+        "台账",
+        "MCP"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 28,
+          "source": "risk-policy.md",
+          "score": 0.7756008704740607,
+          "relevant": true,
+          "preview": "# Risk Policy Risk levels: - LOW: normal chat, mild stress, ordinary anxiety, temporary frustration, no self-harm signals. - MEDIUM: persistent anxiety, insomni"
+        },
+        {
+          "rank": 2,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.562613112085592,
+          "relevant": true,
+          "preview": "生尽快联系辅导员、心理中心、校医院、可信任老师或家人；帮助学生制定 24 小时内的支持计划；鼓励减少独处和高压力环境；询问是否有让自己受伤的想法。如果学生透露自伤或自杀念头、计划、工具或无法保证安全，应立即升级为 HIGH。 ## HIGH 高风险 HIGH 高风险包括明确提到 self-harm 自伤、suicide"
+        },
+        {
+          "rank": 3,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.27515839481299886,
+          "relevant": true,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        },
+        {
+          "rank": 4,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.23897820144625898,
+          "relevant": true,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 1.0,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-high-alert-counselor",
+      "question": "当判断为高风险时，系统要不要通知辅导员或管理员？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "HIGH",
+        "alert",
+        "counselors",
+        "administrators"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.7281003467393792,
+          "relevant": true,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        },
+        {
+          "rank": 2,
+          "chunkId": 22,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.6926800781518956,
+          "relevant": false,
+          "preview": "# 隐私、边界与伦理原则 校园心理 AI 系统需要同时重视支持效果和伦理边界。MindBridge 应尽量保护学生隐私，只收集完成服务所需要的信息，避免诱导学生提供无关敏感信息。对管理员和咨询人员，风险信息应服务于安全支持，而不是用于惩罚、标签化或公开传播。 ## 对学生的表达 当学生担心隐私时，可以说明：普通心理支持"
+        },
+        {
+          "rank": 3,
+          "chunkId": 31,
+          "source": "risk-policy.md",
+          "score": 0.42593890717852423,
+          "relevant": true,
+          "preview": "救助；不要进行长篇追问导致延误。 ## 回复边界 对高风险学生，不应使用责备、挑战、激将或道德评判，例如“你不能这么自私”“你这样会伤害别人”。也不要和学生争辩“活着有什么意义”。更合适的是承认痛苦并拉近现实支持：“我很担心你现在的安全。请先把可能伤害自己的物品放远，去到有人在的地方，并马上联系辅导员或紧急服务。我会把"
+        },
+        {
+          "rank": 4,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.4148131122660815,
+          "relevant": false,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.5,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 0.9197207891481874
+    },
+    {
+      "id": "risk-high-response-tone",
+      "question": "高风险回复的语气应该是怎样的？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "empathetic",
+        "direct",
+        "human support",
+        "稳定"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.6648232806403951,
+          "relevant": true,
+          "preview": "suggesting immediate danger. When risk is HIGH, the system records the report, writes it to the Excel ledger through MCP tools, then sends an alert to counselor"
+        },
+        {
+          "rank": 2,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.5908082491579524,
+          "relevant": true,
+          "preview": "生尽快联系辅导员、心理中心、校医院、可信任老师或家人；帮助学生制定 24 小时内的支持计划；鼓励减少独处和高压力环境；询问是否有让自己受伤的想法。如果学生透露自伤或自杀念头、计划、工具或无法保证安全，应立即升级为 HIGH。 ## HIGH 高风险 HIGH 高风险包括明确提到 self-harm 自伤、suicide"
+        },
+        {
+          "rank": 3,
+          "chunkId": 31,
+          "source": "risk-policy.md",
+          "score": 0.5276717956075024,
+          "relevant": true,
+          "preview": "救助；不要进行长篇追问导致延误。 ## 回复边界 对高风险学生，不应使用责备、挑战、激将或道德评判，例如“你不能这么自私”“你这样会伤害别人”。也不要和学生争辩“活着有什么意义”。更合适的是承认痛苦并拉近现实支持：“我很担心你现在的安全。请先把可能伤害自己的物品放远，去到有人在的地方，并马上联系辅导员或紧急服务。我会把"
+        },
+        {
+          "rank": 4,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.4277758331801572,
+          "relevant": false,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.75,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-high-human-support",
+      "question": "遇到高风险表达时，回复里应该鼓励学生联系谁？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "HIGH",
+        "trusted person",
+        "professional support",
+        "immediate human support"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.6770625949158551,
+          "relevant": true,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        },
+        {
+          "rank": 2,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.648998455270135,
+          "relevant": true,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        },
+        {
+          "rank": 3,
+          "chunkId": 13,
+          "source": "campus-mental-health.md",
+          "score": 0.6126701724537388,
+          "relevant": true,
+          "preview": "寻求 professional support 专业支持。不要用“积极一点”替代具体建议。 睡眠问题通常与压力、作息紊乱、咖啡因、手机使用、宿舍环境、人际冲突和考试焦虑有关。建议学生优先固定起床时间，减少睡前高刺激内容，建立 20 到 30 分钟降速流程。如果连续多周严重失眠、伴随明显情绪问题或白天功能受损，应建议联系"
+        },
+        {
+          "rank": 4,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.5842367936181088,
+          "relevant": true,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 1.0,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-medium-persistent-anxiety",
+      "question": "学生长期持续焦虑但没有自伤计划，属于什么风险等级？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "MEDIUM",
+        "persistent anxiety",
+        "without immediate self-harm intent"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.7154754861240342,
+          "relevant": true,
+          "preview": "suggesting immediate danger. When risk is HIGH, the system records the report, writes it to the Excel ledger through MCP tools, then sends an alert to counselor"
+        },
+        {
+          "rank": 2,
+          "chunkId": 18,
+          "source": "exam-season-guidance.md",
+          "score": 0.43635643090382054,
+          "relevant": true,
+          "preview": "，身体在短期压力下仍能完成任务。 考试当天，如果出现心慌、手抖、脑子空白，可以建议先做 3 轮慢呼气，把双脚踩稳，先写会做的题，跳过卡住的题。不要把一开始的慌张解释成“整场完了”。考试期间的目标是拿到能拿的分，而不是证明自己不焦虑。 ## 考后崩溃和成绩焦虑 考后复盘容易引发自责。可以建议学生限定复盘时间，例如 15 "
+        },
+        {
+          "rank": 3,
+          "chunkId": 28,
+          "source": "risk-policy.md",
+          "score": 0.408766003340043,
+          "relevant": true,
+          "preview": "suggesting immediate danger. When risk is HIGH, the system records the report, writes it to the Excel ledger through MCP tools, then sends an alert to counselor"
+        },
+        {
+          "rank": 4,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.32480415944170427,
+          "relevant": true,
+          "preview": "生尽快联系辅导员、心理中心、校医院、可信任老师或家人；帮助学生制定 24 小时内的支持计划；鼓励减少独处和高压力环境；询问是否有让自己受伤的想法。如果学生透露自伤或自杀念头、计划、工具或无法保证安全，应立即升级为 HIGH。 ## HIGH 高风险 HIGH 高风险包括明确提到 self-harm 自伤、suicide"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 1.0,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-medium-insomnia-loneliness",
+      "question": "长期失眠、孤独和持续焦虑但没有自伤计划，属于什么风险等级？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "MEDIUM",
+        "insomnia",
+        "loneliness",
+        "emotional distress"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.7105090165152412,
+          "relevant": true,
+          "preview": "suggesting immediate danger. When risk is HIGH, the system records the report, writes it to the Excel ledger through MCP tools, then sends an alert to counselor"
+        },
+        {
+          "rank": 2,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.3422690921679243,
+          "relevant": false,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        },
+        {
+          "rank": 3,
+          "chunkId": 18,
+          "source": "exam-season-guidance.md",
+          "score": 0.29544931095405624,
+          "relevant": true,
+          "preview": "，身体在短期压力下仍能完成任务。 考试当天，如果出现心慌、手抖、脑子空白，可以建议先做 3 轮慢呼气，把双脚踩稳，先写会做的题，跳过卡住的题。不要把一开始的慌张解释成“整场完了”。考试期间的目标是拿到能拿的分，而不是证明自己不焦虑。 ## 考后崩溃和成绩焦虑 考后复盘容易引发自责。可以建议学生限定复盘时间，例如 15 "
+        },
+        {
+          "rank": 4,
+          "chunkId": 28,
+          "source": "risk-policy.md",
+          "score": 0.27300204563805663,
+          "relevant": true,
+          "preview": "suggesting immediate danger. When risk is HIGH, the system records the report, writes it to the Excel ledger through MCP tools, then sends an alert to counselor"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.75,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 0.9060254355346822
+    },
+    {
+      "id": "risk-medium-low-mood-pressure",
+      "question": "学生说最近情绪很低落、压力很大，但没有立即危险信号，应该检索什么风险定义？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "MEDIUM",
+        "low mood",
+        "pressure",
+        "emotional distress"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.6971775731402395,
+          "relevant": true,
+          "preview": "suggesting immediate danger. When risk is HIGH, the system records the report, writes it to the Excel ledger through MCP tools, then sends an alert to counselor"
+        },
+        {
+          "rank": 2,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.25802730163152643,
+          "relevant": false,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        },
+        {
+          "rank": 3,
+          "chunkId": 19,
+          "source": "low-mood-depression-support.md",
+          "score": 0.25364207845219633,
+          "relevant": false,
+          "preview": "# 情绪低落、抑郁倾向与日常支持 学生表达低 mood、情绪低落、空心、无意义、孤独、疲惫、想哭、对什么都没兴趣时，MindBridge 应提供接住感和可执行的小步骤。不要急着鼓励“看开一点”或“积极起来”，因为这会让学生觉得自己连难过都做错了。更好的起点是：“这听起来不是普通的累，而像是你已经消耗了很久。” ## 轻"
+        },
+        {
+          "rank": 4,
+          "chunkId": 2,
+          "source": "academic-stress-and-burnout.md",
+          "score": 0.24155051344817519,
+          "relevant": true,
+          "preview": "降、麻木、易怒、逃避、睡眠紊乱。回复时不要只说“坚持一下就好了”。可以建议学生检查负荷：课程数量、兼职、社团、家庭责任、睡眠、饮食、运动、社交支持。如果长期超负荷，休息不是奖励，而是恢复功能的必要条件。 对研究生和实验室场景，压力可能来自导师沟通、课题停滞、论文投稿、组会比较和不确定就业。可以帮助学生准备沟通提纲：当前"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.5,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 0.8772153153380493
+    },
+    {
+      "id": "risk-medium-emotional-distress",
+      "question": "明显情绪困扰但没有明确自伤意图时，风险策略怎么分类？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "MEDIUM",
+        "emotional distress",
+        "without immediate self-harm intent"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.686446621020663,
+          "relevant": true,
+          "preview": "suggesting immediate danger. When risk is HIGH, the system records the report, writes it to the Excel ledger through MCP tools, then sends an alert to counselor"
+        },
+        {
+          "rank": 2,
+          "chunkId": 2,
+          "source": "academic-stress-and-burnout.md",
+          "score": 0.29899976610009343,
+          "relevant": true,
+          "preview": "降、麻木、易怒、逃避、睡眠紊乱。回复时不要只说“坚持一下就好了”。可以建议学生检查负荷：课程数量、兼职、社团、家庭责任、睡眠、饮食、运动、社交支持。如果长期超负荷，休息不是奖励，而是恢复功能的必要条件。 对研究生和实验室场景，压力可能来自导师沟通、课题停滞、论文投稿、组会比较和不确定就业。可以帮助学生准备沟通提纲：当前"
+        },
+        {
+          "rank": 3,
+          "chunkId": 28,
+          "source": "risk-policy.md",
+          "score": 0.2782115026544674,
+          "relevant": true,
+          "preview": "suggesting immediate danger. When risk is HIGH, the system records the report, writes it to the Excel ledger through MCP tools, then sends an alert to counselor"
+        },
+        {
+          "rank": 4,
+          "chunkId": 16,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.24357753693312778,
+          "relevant": false,
+          "preview": "以记录：困扰从什么时候开始，最近是否有重大事件，睡眠和食欲变化，学习生活受影响程度，是否出现 self-harm 自伤或 suicide 自杀想法，已经尝试过哪些方法，希望咨询师帮助解决什么。记录不需要完整，几条关键词就够。 如果学生担心“我说不清楚”，可以建议把和 MindBridge 的对话要点整理成三段：我最近的"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.75,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-medium-no-immediate-intent",
+      "question": "没有立即自伤意图这一点在中风险判断里有什么作用？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "MEDIUM",
+        "without immediate self-harm intent",
+        "没有明确"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 19,
+          "source": "low-mood-depression-support.md",
+          "score": 0.6415998517915675,
+          "relevant": false,
+          "preview": "# 情绪低落、抑郁倾向与日常支持 学生表达低 mood、情绪低落、空心、无意义、孤独、疲惫、想哭、对什么都没兴趣时，MindBridge 应提供接住感和可执行的小步骤。不要急着鼓励“看开一点”或“积极起来”，因为这会让学生觉得自己连难过都做错了。更好的起点是：“这听起来不是普通的累，而像是你已经消耗了很久。” ## 轻"
+        },
+        {
+          "rank": 2,
+          "chunkId": 31,
+          "source": "risk-policy.md",
+          "score": 0.5846523083386859,
+          "relevant": true,
+          "preview": "救助；不要进行长篇追问导致延误。 ## 回复边界 对高风险学生，不应使用责备、挑战、激将或道德评判，例如“你不能这么自私”“你这样会伤害别人”。也不要和学生争辩“活着有什么意义”。更合适的是承认痛苦并拉近现实支持：“我很担心你现在的安全。请先把可能伤害自己的物品放远，去到有人在的地方，并马上联系辅导员或紧急服务。我会把"
+        },
+        {
+          "rank": 3,
+          "chunkId": 7,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.5821374538007649,
+          "relevant": false,
+          "preview": "气，6 拍呼气，连续 5 轮。重点是延长呼气，而不是憋气。如果学生正在明显恐慌，不要要求复杂步骤，可以只说“把双脚踩在地面上，慢慢呼气，比吸气长一点”。 ## 焦虑认知整理 当身体稍微稳定后，可以帮助学生区分事实、猜测和下一步。事实是已经发生或可以验证的信息，例如“明天有考试”“还有三章没复习”。猜测是大脑为了保护自己"
+        },
+        {
+          "rank": 4,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.5504812851524903,
+          "relevant": false,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 2,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.25,
+      "reciprocalRank": 0.5,
+      "ndcgAtK": 0.6309297535714574
+    },
+    {
+      "id": "risk-medium-cannot-sleep",
+      "question": "学生连续很多天睡不着并伴随焦虑，风险等级可能是什么？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "MEDIUM",
+        "insomnia",
+        "persistent anxiety",
+        "失眠"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 7,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.6895871707769511,
+          "relevant": true,
+          "preview": "# 焦虑、恐慌与稳定技术 焦虑 anxiety 是校园咨询中最常见的主题之一。学生可能因为考试、绩点、保研、就业、家庭期待、社交评价或长期不确定性而出现紧张、心慌、胸闷、手抖、胃部不适、注意力下降、反复检查和灾难化想法。MindBridge 的目标不是让学生“马上不焦虑”，而是帮助他们先降低生理唤醒，再把问题拆成可处理"
+        },
+        {
+          "rank": 2,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.4972216344757844,
+          "relevant": true,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        },
+        {
+          "rank": 3,
+          "chunkId": 31,
+          "source": "risk-policy.md",
+          "score": 0.49075822552027665,
+          "relevant": true,
+          "preview": "救助；不要进行长篇追问导致延误。 ## 回复边界 对高风险学生，不应使用责备、挑战、激将或道德评判，例如“你不能这么自私”“你这样会伤害别人”。也不要和学生争辩“活着有什么意义”。更合适的是承认痛苦并拉近现实支持：“我很担心你现在的安全。请先把可能伤害自己的物品放远，去到有人在的地方，并马上联系辅导员或紧急服务。我会把"
+        },
+        {
+          "rank": 4,
+          "chunkId": 33,
+          "source": "sleep-routine-self-care.md",
+          "score": 0.4368117365179194,
+          "relevant": true,
+          "preview": "啡因摄入时间。不要要求学生突然完全戒掉，而是先把摄入提前或减少一半。 ## 失眠时的处理 如果躺下 20 到 30 分钟仍很清醒，可以建议学生短暂离开床，做低刺激活动，例如看纸质书、听低刺激音频、整理桌面，困意回来再上床。不要一直盯着时间，因为看时间会增加“我完了”的焦虑。 对考试前失眠，可以提醒学生：一晚睡不好不等于"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 1.0,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-medium-lonely-pressure",
+      "question": "一个学生说自己很孤独、学业压力很重，但没有提到自杀，应归入哪类风险？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "MEDIUM",
+        "loneliness",
+        "pressure",
+        "without immediate"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.6814010312608604,
+          "relevant": true,
+          "preview": "suggesting immediate danger. When risk is HIGH, the system records the report, writes it to the Excel ledger through MCP tools, then sends an alert to counselor"
+        },
+        {
+          "rank": 2,
+          "chunkId": 1,
+          "source": "academic-stress-and-burnout.md",
+          "score": 0.4595598077143146,
+          "relevant": false,
+          "preview": "# 学业压力、拖延与倦怠 学业压力 academic stress 是大学生最常见的压力源。学生可能因为绩点、排名、保研、考研、出国、论文、实习、竞赛、实验室、挂科风险或家庭期待而长期紧绷。MindBridge 需要同时承认现实压力和情绪消耗，不要把所有问题都归结为时间管理差。 ## 压力拆解 当学生说“事情太多了”“"
+        },
+        {
+          "rank": 3,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.4290120982552689,
+          "relevant": true,
+          "preview": "生尽快联系辅导员、心理中心、校医院、可信任老师或家人；帮助学生制定 24 小时内的支持计划；鼓励减少独处和高压力环境；询问是否有让自己受伤的想法。如果学生透露自伤或自杀念头、计划、工具或无法保证安全，应立即升级为 HIGH。 ## HIGH 高风险 HIGH 高风险包括明确提到 self-harm 自伤、suicide"
+        },
+        {
+          "rank": 4,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.40917946927726034,
+          "relevant": false,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.5,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 0.9197207891481874
+    },
+    {
+      "id": "risk-low-mild-stress",
+      "question": "普通聊天或轻微压力，没有自伤信号时属于什么风险等级？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "LOW",
+        "mild stress",
+        "no self-harm signals"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.6913367392939468,
+          "relevant": true,
+          "preview": "suggesting immediate danger. When risk is HIGH, the system records the report, writes it to the Excel ledger through MCP tools, then sends an alert to counselor"
+        },
+        {
+          "rank": 2,
+          "chunkId": 28,
+          "source": "risk-policy.md",
+          "score": 0.6684196121585508,
+          "relevant": true,
+          "preview": "suggesting immediate danger. When risk is HIGH, the system records the report, writes it to the Excel ledger through MCP tools, then sends an alert to counselor"
+        },
+        {
+          "rank": 3,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.28985691812512215,
+          "relevant": true,
+          "preview": "生尽快联系辅导员、心理中心、校医院、可信任老师或家人；帮助学生制定 24 小时内的支持计划；鼓励减少独处和高压力环境；询问是否有让自己受伤的想法。如果学生透露自伤或自杀念头、计划、工具或无法保证安全，应立即升级为 HIGH。 ## HIGH 高风险 HIGH 高风险包括明确提到 self-harm 自伤、suicide"
+        },
+        {
+          "rank": 4,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.27601829025389907,
+          "relevant": false,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.75,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-low-ordinary-anxiety",
+      "question": "一般焦虑但没有危险信号，风险策略会怎么标记？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "LOW",
+        "ordinary anxiety",
+        "no self-harm signals"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.6568703738081355,
+          "relevant": true,
+          "preview": "suggesting immediate danger. When risk is HIGH, the system records the report, writes it to the Excel ledger through MCP tools, then sends an alert to counselor"
+        },
+        {
+          "rank": 2,
+          "chunkId": 7,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.5896131932209921,
+          "relevant": false,
+          "preview": "气，6 拍呼气，连续 5 轮。重点是延长呼气，而不是憋气。如果学生正在明显恐慌，不要要求复杂步骤，可以只说“把双脚踩在地面上，慢慢呼气，比吸气长一点”。 ## 焦虑认知整理 当身体稍微稳定后，可以帮助学生区分事实、猜测和下一步。事实是已经发生或可以验证的信息，例如“明天有考试”“还有三章没复习”。猜测是大脑为了保护自己"
+        },
+        {
+          "rank": 3,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.3949896365162457,
+          "relevant": false,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        },
+        {
+          "rank": 4,
+          "chunkId": 28,
+          "source": "risk-policy.md",
+          "score": 0.35995980106136877,
+          "relevant": true,
+          "preview": "suggesting immediate danger. When risk is HIGH, the system records the report, writes it to the Excel ledger through MCP tools, then sends an alert to counselor"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.5,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 0.8772153153380493
+    },
+    {
+      "id": "risk-low-normal-chat",
+      "question": "学生只是普通聊天，系统是否应该进入高风险预警？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "LOW",
+        "normal chat",
+        "普通聊天"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 28,
+          "source": "risk-policy.md",
+          "score": 0.7017689265467011,
+          "relevant": true,
+          "preview": "# Risk Policy Risk levels: - LOW: normal chat, mild stress, ordinary anxiety, temporary frustration, no self-harm signals. - MEDIUM: persistent anxiety, insomni"
+        },
+        {
+          "rank": 2,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.6064062740827645,
+          "relevant": true,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        },
+        {
+          "rank": 3,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.4410649988033394,
+          "relevant": true,
+          "preview": "生尽快联系辅导员、心理中心、校医院、可信任老师或家人；帮助学生制定 24 小时内的支持计划；鼓励减少独处和高压力环境；询问是否有让自己受伤的想法。如果学生透露自伤或自杀念头、计划、工具或无法保证安全，应立即升级为 HIGH。 ## HIGH 高风险 HIGH 高风险包括明确提到 self-harm 自伤、suicide"
+        },
+        {
+          "rank": 4,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.2983007897254613,
+          "relevant": false,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.75,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-low-no-self-harm",
+      "question": "没有 self-harm 或 suicide 信号的轻微压力如何定级？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "LOW",
+        "self-harm",
+        "suicide",
+        "no self-harm signals"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.7720290047547943,
+          "relevant": true,
+          "preview": "suggesting immediate danger. When risk is HIGH, the system records the report, writes it to the Excel ledger through MCP tools, then sends an alert to counselor"
+        },
+        {
+          "rank": 2,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.4085188074690008,
+          "relevant": true,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        },
+        {
+          "rank": 3,
+          "chunkId": 26,
+          "source": "relationships-and-family.md",
+          "score": 0.353315866361886,
+          "relevant": true,
+          "preview": "在最需要什么支持，接下来 24 小时如何减少冲动行为。 对于反复查看对方动态、想不断发消息、冲动去找对方的学生，可以建议延迟 20 分钟、写下想说的话但先不发送、找朋友陪伴、离开容易冲动的场景。如果关系中存在威胁、跟踪、暴力或性侵风险，应建议联系现实支持和校园安全资源。 ## 家庭压力 家庭压力可能来自父母期待、专业选"
+        },
+        {
+          "rank": 4,
+          "chunkId": 2,
+          "source": "academic-stress-and-burnout.md",
+          "score": 0.33829627342454816,
+          "relevant": true,
+          "preview": "降、麻木、易怒、逃避、睡眠紊乱。回复时不要只说“坚持一下就好了”。可以建议学生检查负荷：课程数量、兼职、社团、家庭责任、睡眠、饮食、运动、社交支持。如果长期超负荷，休息不是奖励，而是恢复功能的必要条件。 对研究生和实验室场景，压力可能来自导师沟通、课题停滞、论文投稿、组会比较和不确定就业。可以帮助学生准备沟通提纲：当前"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 1.0,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-levels-overview",
+      "question": "系统的风险等级一共有哪几类？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "风险等级"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 28,
+          "source": "risk-policy.md",
+          "score": 0.6529636333008251,
+          "relevant": true,
+          "preview": "# Risk Policy Risk levels: - LOW: normal chat, mild stress, ordinary anxiety, temporary frustration, no self-harm signals. - MEDIUM: persistent anxiety, insomni"
+        },
+        {
+          "rank": 2,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.5421262778013584,
+          "relevant": true,
+          "preview": "生尽快联系辅导员、心理中心、校医院、可信任老师或家人；帮助学生制定 24 小时内的支持计划；鼓励减少独处和高压力环境；询问是否有让自己受伤的想法。如果学生透露自伤或自杀念头、计划、工具或无法保证安全，应立即升级为 HIGH。 ## HIGH 高风险 HIGH 高风险包括明确提到 self-harm 自伤、suicide"
+        },
+        {
+          "rank": 3,
+          "chunkId": 31,
+          "source": "risk-policy.md",
+          "score": 0.42290642420377594,
+          "relevant": true,
+          "preview": "救助；不要进行长篇追问导致延误。 ## 回复边界 对高风险学生，不应使用责备、挑战、激将或道德评判，例如“你不能这么自私”“你这样会伤害别人”。也不要和学生争辩“活着有什么意义”。更合适的是承认痛苦并拉近现实支持：“我很担心你现在的安全。请先把可能伤害自己的物品放远，去到有人在的地方，并马上联系辅导员或紧急服务。我会把"
+        },
+        {
+          "rank": 4,
+          "chunkId": 16,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.26701705540539833,
+          "relevant": false,
+          "preview": "以记录：困扰从什么时候开始，最近是否有重大事件，睡眠和食欲变化，学习生活受影响程度，是否出现 self-harm 自伤或 suicide 自杀想法，已经尝试过哪些方法，希望咨询师帮助解决什么。记录不需要完整，几条关键词就够。 如果学生担心“我说不清楚”，可以建议把和 MindBridge 的对话要点整理成三段：我最近的"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.75,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-compare-medium-high",
+      "question": "中风险和高风险的关键区别是什么？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "MEDIUM",
+        "HIGH",
+        "immediate danger",
+        "self-harm"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 31,
+          "source": "risk-policy.md",
+          "score": 0.6699460266752735,
+          "relevant": true,
+          "preview": "生尽快联系辅导员、心理中心、校医院、可信任老师或家人；帮助学生制定 24 小时内的支持计划；鼓励减少独处和高压力环境；询问是否有让自己受伤的想法。如果学生透露自伤或自杀念头、计划、工具或无法保证安全，应立即升级为 HIGH。 ## HIGH 高风险 HIGH 高风险包括明确提到 self-harm 自伤、suicide"
+        },
+        {
+          "rank": 2,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.647139631948931,
+          "relevant": true,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        },
+        {
+          "rank": 3,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.613034920232328,
+          "relevant": true,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        },
+        {
+          "rank": 4,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.5897625806817934,
+          "relevant": true,
+          "preview": "生尽快联系辅导员、心理中心、校医院、可信任老师或家人；帮助学生制定 24 小时内的支持计划；鼓励减少独处和高压力环境；询问是否有让自己受伤的想法。如果学生透露自伤或自杀念头、计划、工具或无法保证安全，应立即升级为 HIGH。 ## HIGH 高风险 HIGH 高风险包括明确提到 self-harm 自伤、suicide"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 1.0,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-self-harm-signal",
+      "question": "出现 self-harm 信号时，风险规则会如何处理？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "self-harm",
+        "HIGH",
+        "alert",
+        "immediate danger"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.7001705423341544,
+          "relevant": true,
+          "preview": "# 情绪低落、抑郁倾向与日常支持 学生表达低 mood、情绪低落、空心、无意义、孤独、疲惫、想哭、对什么都没兴趣时，MindBridge 应提供接住感和可执行的小步骤。不要急着鼓励“看开一点”或“积极起来”，因为这会让学生觉得自己连难过都做错了。更好的起点是：“这听起来不是普通的累，而像是你已经消耗了很久。” ## 轻"
+        },
+        {
+          "rank": 2,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.6982694800455485,
+          "relevant": true,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        },
+        {
+          "rank": 3,
+          "chunkId": 8,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.5758847085105209,
+          "relevant": true,
+          "preview": "若学生出现 self-harm 自伤、suicide 自杀、伤害他人或 immediate danger 立即危险，则按 HIGH 风险处理。 MindBridge 可以提供稳定技巧和求助路径，但不能诊断焦虑障碍，不能开药，也不能替代咨询师。学生如果正在服药，应联系开药医生或校医院，助手不提供药物调整建议。"
+        },
+        {
+          "rank": 4,
+          "chunkId": 26,
+          "source": "relationships-and-family.md",
+          "score": 0.5692422711725705,
+          "relevant": true,
+          "preview": "在最需要什么支持，接下来 24 小时如何减少冲动行为。 对于反复查看对方动态、想不断发消息、冲动去找对方的学生，可以建议延迟 20 分钟、写下想说的话但先不发送、找朋友陪伴、离开容易冲动的场景。如果关系中存在威胁、跟踪、暴力或性侵风险，应建议联系现实支持和校园安全资源。 ## 家庭压力 家庭压力可能来自父母期待、专业选"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 1.0,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-suicide-keyword",
+      "question": "suicide 这样的关键词在风险判断里意味着什么？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "suicide",
+        "HIGH",
+        "immediate danger"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 16,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.6889946468576666,
+          "relevant": true,
+          "preview": "# 咨询转介、校园资源与求助准备 MindBridge 的重要任务之一是把学生连接到现实中的支持系统。校园心理问题不应只停留在 AI 对话里。默认资源包括辅导员、学院老师、校园心理中心、校医院、班主任、宿舍管理员、校园保卫、可信任同学、家人和当地紧急服务。具体电话和地址应由学校部署时替换为本校信息。 ## 什么时候建议"
+        },
+        {
+          "rank": 2,
+          "chunkId": 31,
+          "source": "risk-policy.md",
+          "score": 0.5993435021505815,
+          "relevant": true,
+          "preview": "救助；不要进行长篇追问导致延误。 ## 回复边界 对高风险学生，不应使用责备、挑战、激将或道德评判，例如“你不能这么自私”“你这样会伤害别人”。也不要和学生争辩“活着有什么意义”。更合适的是承认痛苦并拉近现实支持：“我很担心你现在的安全。请先把可能伤害自己的物品放远，去到有人在的地方，并马上联系辅导员或紧急服务。我会把"
+        },
+        {
+          "rank": 3,
+          "chunkId": 28,
+          "source": "risk-policy.md",
+          "score": 0.42906441490218417,
+          "relevant": true,
+          "preview": "suggesting immediate danger. When risk is HIGH, the system records the report, writes it to the Excel ledger through MCP tools, then sends an alert to counselor"
+        },
+        {
+          "rank": 4,
+          "chunkId": 26,
+          "source": "relationships-and-family.md",
+          "score": 0.3927871190896636,
+          "relevant": true,
+          "preview": "在最需要什么支持，接下来 24 小时如何减少冲动行为。 对于反复查看对方动态、想不断发消息、冲动去找对方的学生，可以建议延迟 20 分钟、写下想说的话但先不发送、找朋友陪伴、离开容易冲动的场景。如果关系中存在威胁、跟踪、暴力或性侵风险，应建议联系现实支持和校园安全资源。 ## 家庭压力 家庭压力可能来自父母期待、专业选"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 1.0,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-alert-mcp-tools",
+      "question": "高风险预警通过什么工具链发送给辅导员或管理员？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "MCP tools",
+        "alert",
+        "counselors",
+        "administrators"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.7267017356048795,
+          "relevant": true,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        },
+        {
+          "rank": 2,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.3541976688896922,
+          "relevant": false,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        },
+        {
+          "rank": 3,
+          "chunkId": 22,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.3123098196268016,
+          "relevant": false,
+          "preview": "# 隐私、边界与伦理原则 校园心理 AI 系统需要同时重视支持效果和伦理边界。MindBridge 应尽量保护学生隐私，只收集完成服务所需要的信息，避免诱导学生提供无关敏感信息。对管理员和咨询人员，风险信息应服务于安全支持，而不是用于惩罚、标签化或公开传播。 ## 对学生的表达 当学生担心隐私时，可以说明：普通心理支持"
+        },
+        {
+          "rank": 4,
+          "chunkId": 15,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.27719789428815844,
+          "relevant": false,
+          "preview": "# 咨询转介、校园资源与求助准备 MindBridge 的重要任务之一是把学生连接到现实中的支持系统。校园心理问题不应只停留在 AI 对话里。默认资源包括辅导员、学院老师、校园心理中心、校医院、班主任、宿舍管理员、校园保卫、可信任同学、家人和当地紧急服务。具体电话和地址应由学校部署时替换为本校信息。 ## 什么时候建议"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.25,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-ledger-mcp-tools",
+      "question": "风险策略里提到 MCP 工具和 Excel 台账的关系是什么？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "MCP tools",
+        "Excel ledger",
+        "records the report"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 28,
+          "source": "risk-policy.md",
+          "score": 0.7128178421885569,
+          "relevant": true,
+          "preview": "# Risk Policy Risk levels: - LOW: normal chat, mild stress, ordinary anxiety, temporary frustration, no self-harm signals. - MEDIUM: persistent anxiety, insomni"
+        },
+        {
+          "rank": 2,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.5513981174572162,
+          "relevant": true,
+          "preview": "生尽快联系辅导员、心理中心、校医院、可信任老师或家人；帮助学生制定 24 小时内的支持计划；鼓励减少独处和高压力环境；询问是否有让自己受伤的想法。如果学生透露自伤或自杀念头、计划、工具或无法保证安全，应立即升级为 HIGH。 ## HIGH 高风险 HIGH 高风险包括明确提到 self-harm 自伤、suicide"
+        },
+        {
+          "rank": 3,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.347461477242217,
+          "relevant": false,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        },
+        {
+          "rank": 4,
+          "chunkId": 19,
+          "source": "low-mood-depression-support.md",
+          "score": 0.31289805096129153,
+          "relevant": false,
+          "preview": "# 情绪低落、抑郁倾向与日常支持 学生表达低 mood、情绪低落、空心、无意义、孤独、疲惫、想哭、对什么都没兴趣时，MindBridge 应提供接住感和可执行的小步骤。不要急着鼓励“看开一点”或“积极起来”，因为这会让学生觉得自己连难过都做错了。更好的起点是：“这听起来不是普通的累，而像是你已经消耗了很久。” ## 轻"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.5,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-admin-alert",
+      "question": "管理员在高风险闭环里会收到什么？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "alert",
+        "administrators",
+        "HIGH"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.6566610488744161,
+          "relevant": true,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        },
+        {
+          "rank": 2,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.617234435545489,
+          "relevant": false,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        },
+        {
+          "rank": 3,
+          "chunkId": 22,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.6097451128866211,
+          "relevant": false,
+          "preview": "# 隐私、边界与伦理原则 校园心理 AI 系统需要同时重视支持效果和伦理边界。MindBridge 应尽量保护学生隐私，只收集完成服务所需要的信息，避免诱导学生提供无关敏感信息。对管理员和咨询人员，风险信息应服务于安全支持，而不是用于惩罚、标签化或公开传播。 ## 对学生的表达 当学生担心隐私时，可以说明：普通心理支持"
+        },
+        {
+          "rank": 4,
+          "chunkId": 15,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.5224594855992198,
+          "relevant": false,
+          "preview": "# 咨询转介、校园资源与求助准备 MindBridge 的重要任务之一是把学生连接到现实中的支持系统。校园心理问题不应只停留在 AI 对话里。默认资源包括辅导员、学院老师、校园心理中心、校医院、班主任、宿舍管理员、校园保卫、可信任同学、家人和当地紧急服务。具体电话和地址应由学校部署时替换为本校信息。 ## 什么时候建议"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.25,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-trusted-person",
+      "question": "为什么高风险回复要建议学生马上联系可信任的人？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "HIGH",
+        "trusted person",
+        "immediate human support"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.727759361819221,
+          "relevant": true,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        },
+        {
+          "rank": 2,
+          "chunkId": 31,
+          "source": "risk-policy.md",
+          "score": 0.540774593710502,
+          "relevant": true,
+          "preview": "救助；不要进行长篇追问导致延误。 ## 回复边界 对高风险学生，不应使用责备、挑战、激将或道德评判，例如“你不能这么自私”“你这样会伤害别人”。也不要和学生争辩“活着有什么意义”。更合适的是承认痛苦并拉近现实支持：“我很担心你现在的安全。请先把可能伤害自己的物品放远，去到有人在的地方，并马上联系辅导员或紧急服务。我会把"
+        },
+        {
+          "rank": 3,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.5046503505160949,
+          "relevant": true,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        },
+        {
+          "rank": 4,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.4875645321831026,
+          "relevant": false,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.75,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "risk-professional-support",
+      "question": "风险处置规则中什么时候需要鼓励专业支持？",
+      "expectedSources": [
+        "risk-policy.md"
+      ],
+      "expectedTerms": [
+        "HIGH",
+        "professional support",
+        "human support"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 15,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.6692901224663709,
+          "relevant": false,
+          "preview": "# 咨询转介、校园资源与求助准备 MindBridge 的重要任务之一是把学生连接到现实中的支持系统。校园心理问题不应只停留在 AI 对话里。默认资源包括辅导员、学院老师、校园心理中心、校医院、班主任、宿舍管理员、校园保卫、可信任同学、家人和当地紧急服务。具体电话和地址应由学校部署时替换为本校信息。 ## 什么时候建议"
+        },
+        {
+          "rank": 2,
+          "chunkId": 16,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.6326348914958035,
+          "relevant": false,
+          "preview": "以记录：困扰从什么时候开始，最近是否有重大事件，睡眠和食欲变化，学习生活受影响程度，是否出现 self-harm 自伤或 suicide 自杀想法，已经尝试过哪些方法，希望咨询师帮助解决什么。记录不需要完整，几条关键词就够。 如果学生担心“我说不清楚”，可以建议把和 MindBridge 的对话要点整理成三段：我最近的"
+        },
+        {
+          "rank": 3,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.5213452657348918,
+          "relevant": true,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        },
+        {
+          "rank": 4,
+          "chunkId": 12,
+          "source": "campus-mental-health.md",
+          "score": 0.4605751925093104,
+          "relevant": true,
+          "preview": "诉、或者需要把混乱感受整理成可执行下一步时，提供稳定、温和、可操作的支持。 默认回复风格应保持平静、非评判、尊重自主。不要说“你想太多了”“别人都能做到”“你应该马上振作起来”这类否定性表达。更合适的表达是：“听起来你已经撑了一段时间”“我们先把最难受的部分降一点点”“如果这个状态持续，找一个现实中的支持者会更安全”。"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 3,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.5,
+      "reciprocalRank": 0.3333333333333333,
+      "ndcgAtK": 0.57064171895532
+    },
+    {
+      "id": "support-anxiety-grounding",
+      "question": "学生焦虑时，可以给哪些 grounding 五感着陆建议？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "anxiety",
+        "grounding",
+        "五感着陆"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 12,
+          "source": "campus-mental-health.md",
+          "score": 0.7336252237465388,
+          "relevant": true,
+          "preview": "ot diagnose illnesses, prescribe medication, instruct students to change medication, or replace a professional counselor. If a student asks whether they have a "
+        },
+        {
+          "rank": 2,
+          "chunkId": 6,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.7029073223689426,
+          "relevant": true,
+          "preview": "# 焦虑、恐慌与稳定技术 焦虑 anxiety 是校园咨询中最常见的主题之一。学生可能因为考试、绩点、保研、就业、家庭期待、社交评价或长期不确定性而出现紧张、心慌、胸闷、手抖、胃部不适、注意力下降、反复检查和灾难化想法。MindBridge 的目标不是让学生“马上不焦虑”，而是帮助他们先降低生理唤醒，再把问题拆成可处理"
+        },
+        {
+          "rank": 3,
+          "chunkId": 16,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.2694503696328921,
+          "relevant": false,
+          "preview": "以记录：困扰从什么时候开始，最近是否有重大事件，睡眠和食欲变化，学习生活受影响程度，是否出现 self-harm 自伤或 suicide 自杀想法，已经尝试过哪些方法，希望咨询师帮助解决什么。记录不需要完整，几条关键词就够。 如果学生担心“我说不清楚”，可以建议把和 MindBridge 的对话要点整理成三段：我最近的"
+        },
+        {
+          "rank": 4,
+          "chunkId": 4,
+          "source": "adjustment-and-transition.md",
+          "score": 0.21422092553277616,
+          "relevant": false,
+          "preview": "# 新生适应、转专业与阶段转换 大学阶段充满 transition 转换：新生入学、换城市、宿舍生活、转专业、升学、实习、毕业、进入研究生阶段。适应困难不是失败，而是旧支持系统和新环境还没有接上。MindBridge 应帮助学生把“我不适合这里”拆成更具体的问题。 ## 新生适应 新生常见困扰包括想家、课程跟不上、社交"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.5,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "support-anxiety-breathing",
+      "question": "学生紧张或恐慌时，知识库建议使用什么呼吸相关方法？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "anxiety",
+        "breathing",
+        "呼吸练习"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.6495525857814703,
+          "relevant": false,
+          "preview": "# 隐私、边界与伦理原则 校园心理 AI 系统需要同时重视支持效果和伦理边界。MindBridge 应尽量保护学生隐私，只收集完成服务所需要的信息，避免诱导学生提供无关敏感信息。对管理员和咨询人员，风险信息应服务于安全支持，而不是用于惩罚、标签化或公开传播。 ## 对学生的表达 当学生担心隐私时，可以说明：普通心理支持"
+        },
+        {
+          "rank": 2,
+          "chunkId": 7,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.5791110246645788,
+          "relevant": false,
+          "preview": "气，6 拍呼气，连续 5 轮。重点是延长呼气，而不是憋气。如果学生正在明显恐慌，不要要求复杂步骤，可以只说“把双脚踩在地面上，慢慢呼气，比吸气长一点”。 ## 焦虑认知整理 当身体稍微稳定后，可以帮助学生区分事实、猜测和下一步。事实是已经发生或可以验证的信息，例如“明天有考试”“还有三章没复习”。猜测是大脑为了保护自己"
+        },
+        {
+          "rank": 3,
+          "chunkId": 6,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.5741546512075598,
+          "relevant": true,
+          "preview": "# 焦虑、恐慌与稳定技术 焦虑 anxiety 是校园咨询中最常见的主题之一。学生可能因为考试、绩点、保研、就业、家庭期待、社交评价或长期不确定性而出现紧张、心慌、胸闷、手抖、胃部不适、注意力下降、反复检查和灾难化想法。MindBridge 的目标不是让学生“马上不焦虑”，而是帮助他们先降低生理唤醒，再把问题拆成可处理"
+        },
+        {
+          "rank": 4,
+          "chunkId": 12,
+          "source": "campus-mental-health.md",
+          "score": 0.3742721583808197,
+          "relevant": true,
+          "preview": "诉、或者需要把混乱感受整理成可执行下一步时，提供稳定、温和、可操作的支持。 默认回复风格应保持平静、非评判、尊重自主。不要说“你想太多了”“别人都能做到”“你应该马上振作起来”这类否定性表达。更合适的表达是：“听起来你已经撑了一段时间”“我们先把最难受的部分降一点点”“如果这个状态持续，找一个现实中的支持者会更安全”。"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 3,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.5,
+      "reciprocalRank": 0.3333333333333333,
+      "ndcgAtK": 0.57064171895532
+    },
+    {
+      "id": "support-anxiety-sleep-routine",
+      "question": "焦虑学生可以从睡眠和作息上做哪些调整？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "sleep",
+        "routine",
+        "规律"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 32,
+          "source": "sleep-routine-self-care.md",
+          "score": 0.7075667346409709,
+          "relevant": true,
+          "preview": "# 睡眠、作息与基础自我照顾 睡眠 sleep 是心理状态的底盘。校园学生常见的睡眠问题包括入睡困难、凌晨醒来、睡前刷手机停不下来、考试前失眠、宿舍噪音、昼夜颠倒、白天嗜睡、咖啡因摄入过多、因为焦虑反复复盘。MindBridge 可以提供睡眠卫生 sleep hygiene 和作息 routine 建议，但不能把严重失"
+        },
+        {
+          "rank": 2,
+          "chunkId": 16,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.43795450599176433,
+          "relevant": false,
+          "preview": "以记录：困扰从什么时候开始，最近是否有重大事件，睡眠和食欲变化，学习生活受影响程度，是否出现 self-harm 自伤或 suicide 自杀想法，已经尝试过哪些方法，希望咨询师帮助解决什么。记录不需要完整，几条关键词就够。 如果学生担心“我说不清楚”，可以建议把和 MindBridge 的对话要点整理成三段：我最近的"
+        },
+        {
+          "rank": 3,
+          "chunkId": 12,
+          "source": "campus-mental-health.md",
+          "score": 0.3749419329771744,
+          "relevant": true,
+          "preview": "诉、或者需要把混乱感受整理成可执行下一步时，提供稳定、温和、可操作的支持。 默认回复风格应保持平静、非评判、尊重自主。不要说“你想太多了”“别人都能做到”“你应该马上振作起来”这类否定性表达。更合适的表达是：“听起来你已经撑了一段时间”“我们先把最难受的部分降一点点”“如果这个状态持续，找一个现实中的支持者会更安全”。"
+        },
+        {
+          "rank": 4,
+          "chunkId": 17,
+          "source": "exam-season-guidance.md",
+          "score": 0.2822461040149098,
+          "relevant": false,
+          "preview": "# 考试季心理支持 考试季 exam season 往往把睡眠、焦虑、自我评价和人际比较集中放大。学生可能出现考前失眠、复习效率下降、反复刷题仍不安心、看到同学进度后崩溃、担心挂科、害怕让家人失望。MindBridge 应帮助学生从“必须完美”切换到“优先稳住并完成考试”。 ## 考前一周 考前一周建议学生做现实计划，"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.5,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 0.9197207891481874
+    },
+    {
+      "id": "support-anxiety-walk",
+      "question": "压力过大时，除了呼吸练习，系统还能建议哪些稳定情绪的小方法？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "grounding",
+        "breathing",
+        "短暂散步",
+        "减少刺激源"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 12,
+          "source": "campus-mental-health.md",
+          "score": 0.7102725231883626,
+          "relevant": true,
+          "preview": "ot diagnose illnesses, prescribe medication, instruct students to change medication, or replace a professional counselor. If a student asks whether they have a "
+        },
+        {
+          "rank": 2,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.4723309617073976,
+          "relevant": false,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        },
+        {
+          "rank": 3,
+          "chunkId": 6,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.4415001149704996,
+          "relevant": true,
+          "preview": "# 焦虑、恐慌与稳定技术 焦虑 anxiety 是校园咨询中最常见的主题之一。学生可能因为考试、绩点、保研、就业、家庭期待、社交评价或长期不确定性而出现紧张、心慌、胸闷、手抖、胃部不适、注意力下降、反复检查和灾难化想法。MindBridge 的目标不是让学生“马上不焦虑”，而是帮助他们先降低生理唤醒，再把问题拆成可处理"
+        },
+        {
+          "rank": 4,
+          "chunkId": 16,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.31668537321701445,
+          "relevant": false,
+          "preview": "以记录：困扰从什么时候开始，最近是否有重大事件，睡眠和食欲变化，学习生活受影响程度，是否出现 self-harm 自伤或 suicide 自杀想法，已经尝试过哪些方法，希望咨询师帮助解决什么。记录不需要完整，几条关键词就够。 如果学生担心“我说不清楚”，可以建议把和 MindBridge 的对话要点整理成三段：我最近的"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.5,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 0.9197207891481874
+    },
+    {
+      "id": "support-anxiety-overwhelmed",
+      "question": "当学生说自己压力大到快崩溃，但没有危险信号时，RAG 应该补充哪些支持建议？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "压力过大",
+        "grounding",
+        "breathing",
+        "routine"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.6682559266789014,
+          "relevant": false,
+          "preview": "suggesting immediate danger. When risk is HIGH, the system records the report, writes it to the Excel ledger through MCP tools, then sends an alert to counselor"
+        },
+        {
+          "rank": 2,
+          "chunkId": 18,
+          "source": "exam-season-guidance.md",
+          "score": 0.5994725480711843,
+          "relevant": false,
+          "preview": "，身体在短期压力下仍能完成任务。 考试当天，如果出现心慌、手抖、脑子空白，可以建议先做 3 轮慢呼气，把双脚踩稳，先写会做的题，跳过卡住的题。不要把一开始的慌张解释成“整场完了”。考试期间的目标是拿到能拿的分，而不是证明自己不焦虑。 ## 考后崩溃和成绩焦虑 考后复盘容易引发自责。可以建议学生限定复盘时间，例如 15 "
+        },
+        {
+          "rank": 3,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.5482353626474821,
+          "relevant": false,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        },
+        {
+          "rank": 4,
+          "chunkId": 16,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.5021654627702098,
+          "relevant": false,
+          "preview": "以记录：困扰从什么时候开始，最近是否有重大事件，睡眠和食欲变化，学习生活受影响程度，是否出现 self-harm 自伤或 suicide 自杀想法，已经尝试过哪些方法，希望咨询师帮助解决什么。记录不需要完整，几条关键词就够。 如果学生担心“我说不清楚”，可以建议把和 MindBridge 的对话要点整理成三段：我最近的"
+        }
+      ],
+      "hit": false,
+      "firstRelevantRank": 0,
+      "recallAtK": 0.0,
+      "precisionAtK": 0.0,
+      "reciprocalRank": 0.0,
+      "ndcgAtK": 0.0
+    },
+    {
+      "id": "support-anxiety-practical-guidance",
+      "question": "心理助手对焦虑学生的建议应该偏向抽象安慰还是可执行方法？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "practical guidance",
+        "可执行",
+        "grounding",
+        "breathing"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 12,
+          "source": "campus-mental-health.md",
+          "score": 0.6534877844247635,
+          "relevant": true,
+          "preview": "ot diagnose illnesses, prescribe medication, instruct students to change medication, or replace a professional counselor. If a student asks whether they have a "
+        },
+        {
+          "rank": 2,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.646693173398587,
+          "relevant": true,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        },
+        {
+          "rank": 3,
+          "chunkId": 7,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.6452255167916287,
+          "relevant": false,
+          "preview": "气，6 拍呼气，连续 5 轮。重点是延长呼气，而不是憋气。如果学生正在明显恐慌，不要要求复杂步骤，可以只说“把双脚踩在地面上，慢慢呼气，比吸气长一点”。 ## 焦虑认知整理 当身体稍微稳定后，可以帮助学生区分事实、猜测和下一步。事实是已经发生或可以验证的信息，例如“明天有考试”“还有三章没复习”。猜测是大脑为了保护自己"
+        },
+        {
+          "rank": 4,
+          "chunkId": 5,
+          "source": "adjustment-and-transition.md",
+          "score": 0.5852763041713683,
+          "relevant": true,
+          "preview": "路径、学长学姐经验、学院政策、可替代选择。信息收集能降低灾难化，但不要替学生做重大决定。 毕业和就业期常带来身份焦虑。学生可能把 offer、考研结果或论文进度等同于自我价值。MindBridge 可以帮助学生把价值和结果分开：结果重要，但不能定义整个人。建议建立短期行动清单，例如修改简历、联系导师、咨询就业中心、安排"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.75,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 0.9674679834891693
+    },
+    {
+      "id": "support-low-mood-small-actions",
+      "question": "学生情绪低落时，系统可以鼓励哪些小行动？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "low mood",
+        "small actions",
+        "小行动"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 19,
+          "source": "low-mood-depression-support.md",
+          "score": 0.7106846800278892,
+          "relevant": true,
+          "preview": "# 情绪低落、抑郁倾向与日常支持 学生表达低 mood、情绪低落、空心、无意义、孤独、疲惫、想哭、对什么都没兴趣时，MindBridge 应提供接住感和可执行的小步骤。不要急着鼓励“看开一点”或“积极起来”，因为这会让学生觉得自己连难过都做错了。更好的起点是：“这听起来不是普通的累，而像是你已经消耗了很久。” ## 轻"
+        },
+        {
+          "rank": 2,
+          "chunkId": 12,
+          "source": "campus-mental-health.md",
+          "score": 0.49447137681648123,
+          "relevant": true,
+          "preview": "诉、或者需要把混乱感受整理成可执行下一步时，提供稳定、温和、可操作的支持。 默认回复风格应保持平静、非评判、尊重自主。不要说“你想太多了”“别人都能做到”“你应该马上振作起来”这类否定性表达。更合适的表达是：“听起来你已经撑了一段时间”“我们先把最难受的部分降一点点”“如果这个状态持续，找一个现实中的支持者会更安全”。"
+        },
+        {
+          "rank": 3,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.4277541186802862,
+          "relevant": false,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        },
+        {
+          "rank": 4,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.35218230528589206,
+          "relevant": true,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.75,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 0.9674679834891693
+    },
+    {
+      "id": "support-low-mood-social-connection",
+      "question": "低落和孤独时，知识库是否建议建立社交连接？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "low mood",
+        "social connection",
+        "社交连接"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.6768397896234722,
+          "relevant": true,
+          "preview": "# 情绪低落、抑郁倾向与日常支持 学生表达低 mood、情绪低落、空心、无意义、孤独、疲惫、想哭、对什么都没兴趣时，MindBridge 应提供接住感和可执行的小步骤。不要急着鼓励“看开一点”或“积极起来”，因为这会让学生觉得自己连难过都做错了。更好的起点是：“这听起来不是普通的累，而像是你已经消耗了很久。” ## 轻"
+        },
+        {
+          "rank": 2,
+          "chunkId": 12,
+          "source": "campus-mental-health.md",
+          "score": 0.46164829635019533,
+          "relevant": true,
+          "preview": "诉、或者需要把混乱感受整理成可执行下一步时，提供稳定、温和、可操作的支持。 默认回复风格应保持平静、非评判、尊重自主。不要说“你想太多了”“别人都能做到”“你应该马上振作起来”这类否定性表达。更合适的表达是：“听起来你已经撑了一段时间”“我们先把最难受的部分降一点点”“如果这个状态持续，找一个现实中的支持者会更安全”。"
+        },
+        {
+          "rank": 3,
+          "chunkId": 19,
+          "source": "low-mood-depression-support.md",
+          "score": 0.39908879393653673,
+          "relevant": false,
+          "preview": "# 情绪低落、抑郁倾向与日常支持 学生表达低 mood、情绪低落、空心、无意义、孤独、疲惫、想哭、对什么都没兴趣时，MindBridge 应提供接住感和可执行的小步骤。不要急着鼓励“看开一点”或“积极起来”，因为这会让学生觉得自己连难过都做错了。更好的起点是：“这听起来不是普通的累，而像是你已经消耗了很久。” ## 轻"
+        },
+        {
+          "rank": 4,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.3423840656966158,
+          "relevant": false,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.5,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "support-low-mood-journaling",
+      "question": "学生心情低落时，日记记录 journaling 有被知识库提到吗？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "low mood",
+        "journaling",
+        "日记记录"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 19,
+          "source": "low-mood-depression-support.md",
+          "score": 0.7368235866538705,
+          "relevant": true,
+          "preview": "# 情绪低落、抑郁倾向与日常支持 学生表达低 mood、情绪低落、空心、无意义、孤独、疲惫、想哭、对什么都没兴趣时，MindBridge 应提供接住感和可执行的小步骤。不要急着鼓励“看开一点”或“积极起来”，因为这会让学生觉得自己连难过都做错了。更好的起点是：“这听起来不是普通的累，而像是你已经消耗了很久。” ## 轻"
+        },
+        {
+          "rank": 2,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.5468112020112023,
+          "relevant": true,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        },
+        {
+          "rank": 3,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.4718437625088868,
+          "relevant": false,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        },
+        {
+          "rank": 4,
+          "chunkId": 12,
+          "source": "campus-mental-health.md",
+          "score": 0.4540208017706754,
+          "relevant": true,
+          "preview": "诉、或者需要把混乱感受整理成可执行下一步时，提供稳定、温和、可操作的支持。 默认回复风格应保持平静、非评判、尊重自主。不要说“你想太多了”“别人都能做到”“你应该马上振作起来”这类否定性表达。更合适的表达是：“听起来你已经撑了一段时间”“我们先把最难受的部分降一点点”“如果这个状态持续，找一个现实中的支持者会更安全”。"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.75,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 0.9674679834891693
+    },
+    {
+      "id": "support-low-mood-professional-support",
+      "question": "低落状态持续时，系统应该建议学生寻求什么支持？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "low mood",
+        "professional support",
+        "专业支持"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 12,
+          "source": "campus-mental-health.md",
+          "score": 0.7034245047036665,
+          "relevant": true,
+          "preview": "ot diagnose illnesses, prescribe medication, instruct students to change medication, or replace a professional counselor. If a student asks whether they have a "
+        },
+        {
+          "rank": 2,
+          "chunkId": 19,
+          "source": "low-mood-depression-support.md",
+          "score": 0.4495110228131323,
+          "relevant": false,
+          "preview": "# 情绪低落、抑郁倾向与日常支持 学生表达低 mood、情绪低落、空心、无意义、孤独、疲惫、想哭、对什么都没兴趣时，MindBridge 应提供接住感和可执行的小步骤。不要急着鼓励“看开一点”或“积极起来”，因为这会让学生觉得自己连难过都做错了。更好的起点是：“这听起来不是普通的累，而像是你已经消耗了很久。” ## 轻"
+        },
+        {
+          "rank": 3,
+          "chunkId": 25,
+          "source": "relationships-and-family.md",
+          "score": 0.36209982932480367,
+          "relevant": false,
+          "preview": "# 人际关系、室友冲突与家庭压力 校园心理困扰常常不只是个人情绪，也来自关系。关系压力包括室友冲突、恋爱分手、朋友疏远、社团排斥、师生沟通、家庭期待、父母控制、经济压力和身份认同。MindBridge 回应关系问题时，应避免简单站队或煽动冲突，而是帮助学生澄清事实、感受、需求和边界。 ## 室友和同学冲突 室友冲突常见"
+        },
+        {
+          "rank": 4,
+          "chunkId": 15,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.352685432493282,
+          "relevant": true,
+          "preview": "# 咨询转介、校园资源与求助准备 MindBridge 的重要任务之一是把学生连接到现实中的支持系统。校园心理问题不应只停留在 AI 对话里。默认资源包括辅导员、学院老师、校园心理中心、校医院、班主任、宿舍管理员、校园保卫、可信任同学、家人和当地紧急服务。具体电话和地址应由学校部署时替换为本校信息。 ## 什么时候建议"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.5,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 0.8772153153380493
+    },
+    {
+      "id": "support-low-mood-eating-sleep",
+      "question": "对轻中度抑郁倾向，知识库有没有提到规律饮食睡眠？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "低落",
+        "规律饮食睡眠",
+        "professional support"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 19,
+          "source": "low-mood-depression-support.md",
+          "score": 0.6851745471243931,
+          "relevant": true,
+          "preview": "# 情绪低落、抑郁倾向与日常支持 学生表达低 mood、情绪低落、空心、无意义、孤独、疲惫、想哭、对什么都没兴趣时，MindBridge 应提供接住感和可执行的小步骤。不要急着鼓励“看开一点”或“积极起来”，因为这会让学生觉得自己连难过都做错了。更好的起点是：“这听起来不是普通的累，而像是你已经消耗了很久。” ## 轻"
+        },
+        {
+          "rank": 2,
+          "chunkId": 12,
+          "source": "campus-mental-health.md",
+          "score": 0.5501220658471426,
+          "relevant": true,
+          "preview": "诉、或者需要把混乱感受整理成可执行下一步时，提供稳定、温和、可操作的支持。 默认回复风格应保持平静、非评判、尊重自主。不要说“你想太多了”“别人都能做到”“你应该马上振作起来”这类否定性表达。更合适的表达是：“听起来你已经撑了一段时间”“我们先把最难受的部分降一点点”“如果这个状态持续，找一个现实中的支持者会更安全”。"
+        },
+        {
+          "rank": 3,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.2310629814471727,
+          "relevant": true,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        },
+        {
+          "rank": 4,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.22737393489707977,
+          "relevant": true,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 1.0,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "support-loneliness-connection",
+      "question": "学生说自己很孤独时，心理助手可以给什么方向的支持？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "孤独",
+        "social connection",
+        "professional support"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 19,
+          "source": "low-mood-depression-support.md",
+          "score": 0.7070637376789988,
+          "relevant": true,
+          "preview": "# 情绪低落、抑郁倾向与日常支持 学生表达低 mood、情绪低落、空心、无意义、孤独、疲惫、想哭、对什么都没兴趣时，MindBridge 应提供接住感和可执行的小步骤。不要急着鼓励“看开一点”或“积极起来”，因为这会让学生觉得自己连难过都做错了。更好的起点是：“这听起来不是普通的累，而像是你已经消耗了很久。” ## 轻"
+        },
+        {
+          "rank": 2,
+          "chunkId": 15,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.4046803718756161,
+          "relevant": false,
+          "preview": "# 咨询转介、校园资源与求助准备 MindBridge 的重要任务之一是把学生连接到现实中的支持系统。校园心理问题不应只停留在 AI 对话里。默认资源包括辅导员、学院老师、校园心理中心、校医院、班主任、宿舍管理员、校园保卫、可信任同学、家人和当地紧急服务。具体电话和地址应由学校部署时替换为本校信息。 ## 什么时候建议"
+        },
+        {
+          "rank": 3,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.3537558247756256,
+          "relevant": true,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        },
+        {
+          "rank": 4,
+          "chunkId": 29,
+          "source": "risk-policy.md",
+          "score": 0.30249217986368115,
+          "relevant": true,
+          "preview": "、现实支持和当前是否安全。 ## LOW 低风险 LOW 低风险包括普通聊天、轻微压力、短暂焦虑、偶发情绪波动、学习任务拖延、普通人际烦恼、没有 self-harm 自伤、suicide 自杀或伤害他人的信号。低风险回复可以偏陪伴和建议：共情学生的处境，帮助其澄清问题，给出一两个可执行的小步骤，例如整理待办、短暂休息、"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.75,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 0.9060254355346822
+    },
+    {
+      "id": "support-nonjudgmental-tone",
+      "question": "校园心理助手的基本回应风格应该是什么样的？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "calm",
+        "non-judgmental",
+        "practical guidance",
+        "平静"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 11,
+          "source": "campus-mental-health.md",
+          "score": 0.6768127193275616,
+          "relevant": true,
+          "preview": "self as a therapist. For anxiety, panic, academic pressure, relationship conflict, sleep disruption, loneliness, low mood, and adjustment stress, MindBridge can"
+        },
+        {
+          "rank": 2,
+          "chunkId": 15,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.43567651055623763,
+          "relevant": false,
+          "preview": "# 咨询转介、校园资源与求助准备 MindBridge 的重要任务之一是把学生连接到现实中的支持系统。校园心理问题不应只停留在 AI 对话里。默认资源包括辅导员、学院老师、校园心理中心、校医院、班主任、宿舍管理员、校园保卫、可信任同学、家人和当地紧急服务。具体电话和地址应由学校部署时替换为本校信息。 ## 什么时候建议"
+        },
+        {
+          "rank": 3,
+          "chunkId": 6,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.3904806403556079,
+          "relevant": false,
+          "preview": "# 焦虑、恐慌与稳定技术 焦虑 anxiety 是校园咨询中最常见的主题之一。学生可能因为考试、绩点、保研、就业、家庭期待、社交评价或长期不确定性而出现紧张、心慌、胸闷、手抖、胃部不适、注意力下降、反复检查和灾难化想法。MindBridge 的目标不是让学生“马上不焦虑”，而是帮助他们先降低生理唤醒，再把问题拆成可处理"
+        },
+        {
+          "rank": 4,
+          "chunkId": 7,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.3614807981415587,
+          "relevant": false,
+          "preview": "气，6 拍呼气，连续 5 轮。重点是延长呼气，而不是憋气。如果学生正在明显恐慌，不要要求复杂步骤，可以只说“把双脚踩在地面上，慢慢呼气，比吸气长一点”。 ## 焦虑认知整理 当身体稍微稳定后，可以帮助学生区分事实、猜测和下一步。事实是已经发生或可以验证的信息，例如“明天有考试”“还有三章没复习”。猜测是大脑为了保护自己"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.25,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "support-calm-practical",
+      "question": "MindBridge 为什么要提供平静、非评判、可执行的陪伴建议？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "supportive",
+        "calm",
+        "non-judgmental",
+        "可执行"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 11,
+          "source": "campus-mental-health.md",
+          "score": 0.7366896015162837,
+          "relevant": true,
+          "preview": "self as a therapist. For anxiety, panic, academic pressure, relationship conflict, sleep disruption, loneliness, low mood, and adjustment stress, MindBridge can"
+        },
+        {
+          "rank": 2,
+          "chunkId": 12,
+          "source": "campus-mental-health.md",
+          "score": 0.4607760902471611,
+          "relevant": true,
+          "preview": "诉、或者需要把混乱感受整理成可执行下一步时，提供稳定、温和、可操作的支持。 默认回复风格应保持平静、非评判、尊重自主。不要说“你想太多了”“别人都能做到”“你应该马上振作起来”这类否定性表达。更合适的表达是：“听起来你已经撑了一段时间”“我们先把最难受的部分降一点点”“如果这个状态持续，找一个现实中的支持者会更安全”。"
+        },
+        {
+          "rank": 3,
+          "chunkId": 19,
+          "source": "low-mood-depression-support.md",
+          "score": 0.3647986571545034,
+          "relevant": true,
+          "preview": "# 情绪低落、抑郁倾向与日常支持 学生表达低 mood、情绪低落、空心、无意义、孤独、疲惫、想哭、对什么都没兴趣时，MindBridge 应提供接住感和可执行的小步骤。不要急着鼓励“看开一点”或“积极起来”，因为这会让学生觉得自己连难过都做错了。更好的起点是：“这听起来不是普通的累，而像是你已经消耗了很久。” ## 轻"
+        },
+        {
+          "rank": 4,
+          "chunkId": 26,
+          "source": "relationships-and-family.md",
+          "score": 0.23016305956939126,
+          "relevant": false,
+          "preview": "在最需要什么支持，接下来 24 小时如何减少冲动行为。 对于反复查看对方动态、想不断发消息、冲动去找对方的学生，可以建议延迟 20 分钟、写下想说的话但先不发送、找朋友陪伴、离开容易冲动的场景。如果关系中存在威胁、跟踪、暴力或性侵风险，应建议联系现实支持和校园安全资源。 ## 家庭压力 家庭压力可能来自父母期待、专业选"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.75,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "support-trusted-human-help",
+      "question": "症状严重或持续时，知识库建议学生联系哪些人或机构？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "trusted human help",
+        "辅导员",
+        "心理中心",
+        "紧急服务"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.6832412936303222,
+          "relevant": true,
+          "preview": "# 隐私、边界与伦理原则 校园心理 AI 系统需要同时重视支持效果和伦理边界。MindBridge 应尽量保护学生隐私，只收集完成服务所需要的信息，避免诱导学生提供无关敏感信息。对管理员和咨询人员，风险信息应服务于安全支持，而不是用于惩罚、标签化或公开传播。 ## 对学生的表达 当学生担心隐私时，可以说明：普通心理支持"
+        },
+        {
+          "rank": 2,
+          "chunkId": 7,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.33306121420061297,
+          "relevant": true,
+          "preview": "气，6 拍呼气，连续 5 轮。重点是延长呼气，而不是憋气。如果学生正在明显恐慌，不要要求复杂步骤，可以只说“把双脚踩在地面上，慢慢呼气，比吸气长一点”。 ## 焦虑认知整理 当身体稍微稳定后，可以帮助学生区分事实、猜测和下一步。事实是已经发生或可以验证的信息，例如“明天有考试”“还有三章没复习”。猜测是大脑为了保护自己"
+        },
+        {
+          "rank": 3,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.3132483757749405,
+          "relevant": true,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        },
+        {
+          "rank": 4,
+          "chunkId": 16,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.29153278764539414,
+          "relevant": true,
+          "preview": "以记录：困扰从什么时候开始，最近是否有重大事件，睡眠和食欲变化，学习生活受影响程度，是否出现 self-harm 自伤或 suicide 自杀想法，已经尝试过哪些方法，希望咨询师帮助解决什么。记录不需要完整，几条关键词就够。 如果学生担心“我说不清楚”，可以建议把和 MindBridge 的对话要点整理成三段：我最近的"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 1.0,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "support-serious-persistent",
+      "question": "当学生的症状 serious or persistent 时，助手应该怎么引导？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "serious",
+        "persistent",
+        "trusted human help"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 14,
+          "source": "campus-mental-health.md",
+          "score": 0.6431721757453193,
+          "relevant": true,
+          "preview": "寻求 professional support 专业支持。不要用“积极一点”替代具体建议。 睡眠问题通常与压力、作息紊乱、咖啡因、手机使用、宿舍环境、人际冲突和考试焦虑有关。建议学生优先固定起床时间，减少睡前高刺激内容，建立 20 到 30 分钟降速流程。如果连续多周严重失眠、伴随明显情绪问题或白天功能受损，应建议联系"
+        },
+        {
+          "rank": 2,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.5441219567139901,
+          "relevant": false,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        },
+        {
+          "rank": 3,
+          "chunkId": 9,
+          "source": "campus-mental-health.md",
+          "score": 0.5040101705123818,
+          "relevant": true,
+          "preview": "# Campus Mental Health Knowledge MindBridge is a supportive campus mental-health assistant. It should provide calm, non-judgmental, practical guidance and encou"
+        },
+        {
+          "rank": 4,
+          "chunkId": 12,
+          "source": "campus-mental-health.md",
+          "score": 0.4590238592727498,
+          "relevant": true,
+          "preview": "诉、或者需要把混乱感受整理成可执行下一步时，提供稳定、温和、可操作的支持。 默认回复风格应保持平静、非评判、尊重自主。不要说“你想太多了”“别人都能做到”“你应该马上振作起来”这类否定性表达。更合适的表达是：“听起来你已经撑了一段时间”“我们先把最难受的部分降一点点”“如果这个状态持续，找一个现实中的支持者会更安全”。"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.75,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 0.9060254355346822
+    },
+    {
+      "id": "support-emergency-services",
+      "question": "高风险或立即危险时，校园心理健康知识里提到哪些紧急支持？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "immediate danger",
+        "emergency services",
+        "trusted person"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 11,
+          "source": "campus-mental-health.md",
+          "score": 0.6846864746872227,
+          "relevant": true,
+          "preview": "self as a therapist. For anxiety, panic, academic pressure, relationship conflict, sleep disruption, loneliness, low mood, and adjustment stress, MindBridge can"
+        },
+        {
+          "rank": 2,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.4970163771264961,
+          "relevant": false,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        },
+        {
+          "rank": 3,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.426099618117185,
+          "relevant": true,
+          "preview": "生尽快联系辅导员、心理中心、校医院、可信任老师或家人；帮助学生制定 24 小时内的支持计划；鼓励减少独处和高压力环境；询问是否有让自己受伤的想法。如果学生透露自伤或自杀念头、计划、工具或无法保证安全，应立即升级为 HIGH。 ## HIGH 高风险 HIGH 高风险包括明确提到 self-harm 自伤、suicide"
+        },
+        {
+          "rank": 4,
+          "chunkId": 13,
+          "source": "campus-mental-health.md",
+          "score": 0.37052103020837096,
+          "relevant": true,
+          "preview": "寻求 professional support 专业支持。不要用“积极一点”替代具体建议。 睡眠问题通常与压力、作息紊乱、咖啡因、手机使用、宿舍环境、人际冲突和考试焦虑有关。建议学生优先固定起床时间，减少睡前高刺激内容，建立 20 到 30 分钟降速流程。如果连续多周严重失眠、伴随明显情绪问题或白天功能受损，应建议联系"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.75,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 0.9060254355346822
+    },
+    {
+      "id": "support-counselor-channel",
+      "question": "学生出现自伤或自杀风险时，知识库提到要通知哪个渠道？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "self-harm",
+        "suicide",
+        "configured counselor channel"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.6806995456554592,
+          "relevant": true,
+          "preview": "# 隐私、边界与伦理原则 校园心理 AI 系统需要同时重视支持效果和伦理边界。MindBridge 应尽量保护学生隐私，只收集完成服务所需要的信息，避免诱导学生提供无关敏感信息。对管理员和咨询人员，风险信息应服务于安全支持，而不是用于惩罚、标签化或公开传播。 ## 对学生的表达 当学生担心隐私时，可以说明：普通心理支持"
+        },
+        {
+          "rank": 2,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.3404628967934451,
+          "relevant": true,
+          "preview": "生尽快联系辅导员、心理中心、校医院、可信任老师或家人；帮助学生制定 24 小时内的支持计划；鼓励减少独处和高压力环境；询问是否有让自己受伤的想法。如果学生透露自伤或自杀念头、计划、工具或无法保证安全，应立即升级为 HIGH。 ## HIGH 高风险 HIGH 高风险包括明确提到 self-harm 自伤、suicide"
+        },
+        {
+          "rank": 3,
+          "chunkId": 22,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.3294229669417287,
+          "relevant": true,
+          "preview": "# 隐私、边界与伦理原则 校园心理 AI 系统需要同时重视支持效果和伦理边界。MindBridge 应尽量保护学生隐私，只收集完成服务所需要的信息，避免诱导学生提供无关敏感信息。对管理员和咨询人员，风险信息应服务于安全支持，而不是用于惩罚、标签化或公开传播。 ## 对学生的表达 当学生担心隐私时，可以说明：普通心理支持"
+        },
+        {
+          "rank": 4,
+          "chunkId": 31,
+          "source": "risk-policy.md",
+          "score": 0.29897308353064933,
+          "relevant": false,
+          "preview": "救助；不要进行长篇追问导致延误。 ## 回复边界 对高风险学生，不应使用责备、挑战、激将或道德评判，例如“你不能这么自私”“你这样会伤害别人”。也不要和学生争辩“活着有什么意义”。更合适的是承认痛苦并拉近现实支持：“我很担心你现在的安全。请先把可能伤害自己的物品放远，去到有人在的地方，并马上联系辅导员或紧急服务。我会把"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.75,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "boundary-no-diagnosis",
+      "question": "心理助手能不能替代专业咨询师进行诊断？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "must not diagnose",
+        "不能诊断疾病",
+        "professional counselor"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 31,
+          "source": "risk-policy.md",
+          "score": 0.7007961221136344,
+          "relevant": false,
+          "preview": "生尽快联系辅导员、心理中心、校医院、可信任老师或家人；帮助学生制定 24 小时内的支持计划；鼓励减少独处和高压力环境；询问是否有让自己受伤的想法。如果学生透露自伤或自杀念头、计划、工具或无法保证安全，应立即升级为 HIGH。 ## HIGH 高风险 HIGH 高风险包括明确提到 self-harm 自伤、suicide"
+        },
+        {
+          "rank": 2,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.6631667828211157,
+          "relevant": true,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        },
+        {
+          "rank": 3,
+          "chunkId": 8,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.6074411229078539,
+          "relevant": false,
+          "preview": "若学生出现 self-harm 自伤、suicide 自杀、伤害他人或 immediate danger 立即危险，则按 HIGH 风险处理。 MindBridge 可以提供稳定技巧和求助路径，但不能诊断焦虑障碍，不能开药，也不能替代咨询师。学生如果正在服药，应联系开药医生或校医院，助手不提供药物调整建议。"
+        },
+        {
+          "rank": 4,
+          "chunkId": 21,
+          "source": "low-mood-depression-support.md",
+          "score": 0.5118689692091059,
+          "relevant": false,
+          "preview": "-harm 自伤或 suicide 自杀计划、工具、时间地点、告别语言、无法保证安全，必须按 HIGH 风险处理，触发预警并鼓励立即联系现实中的人。 助手不能诊断抑郁症，不能开药，不能承诺替代长期咨询。它可以帮助学生把痛苦说清楚、降低自责、做短期安全计划，并把学生连接到可信任的人和专业资源。"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 2,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.25,
+      "reciprocalRank": 0.5,
+      "ndcgAtK": 0.6309297535714574
+    },
+    {
+      "id": "boundary-no-medication",
+      "question": "学生问能不能吃药时，心理助手可以开药或指导用药吗？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "prescribe medication",
+        "不能开药",
+        "指导用药"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 14,
+          "source": "campus-mental-health.md",
+          "score": 0.7114009586259487,
+          "relevant": true,
+          "preview": "寻求 professional support 专业支持。不要用“积极一点”替代具体建议。 睡眠问题通常与压力、作息紊乱、咖啡因、手机使用、宿舍环境、人际冲突和考试焦虑有关。建议学生优先固定起床时间，减少睡前高刺激内容，建立 20 到 30 分钟降速流程。如果连续多周严重失眠、伴随明显情绪问题或白天功能受损，应建议联系"
+        },
+        {
+          "rank": 2,
+          "chunkId": 13,
+          "source": "campus-mental-health.md",
+          "score": 0.5396306679623499,
+          "relevant": true,
+          "preview": "寻求 professional support 专业支持。不要用“积极一点”替代具体建议。 睡眠问题通常与压力、作息紊乱、咖啡因、手机使用、宿舍环境、人际冲突和考试焦虑有关。建议学生优先固定起床时间，减少睡前高刺激内容，建立 20 到 30 分钟降速流程。如果连续多周严重失眠、伴随明显情绪问题或白天功能受损，应建议联系"
+        },
+        {
+          "rank": 3,
+          "chunkId": 22,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.3520867251013278,
+          "relevant": false,
+          "preview": "# 隐私、边界与伦理原则 校园心理 AI 系统需要同时重视支持效果和伦理边界。MindBridge 应尽量保护学生隐私，只收集完成服务所需要的信息，避免诱导学生提供无关敏感信息。对管理员和咨询人员，风险信息应服务于安全支持，而不是用于惩罚、标签化或公开传播。 ## 对学生的表达 当学生担心隐私时，可以说明：普通心理支持"
+        },
+        {
+          "rank": 4,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.3055693975308928,
+          "relevant": false,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.5,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "boundary-not-replace-counselor",
+      "question": "MindBridge 能不能替代学校心理咨询师？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "must not replace",
+        "professional counselor",
+        "不能替代"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.7365115096390628,
+          "relevant": true,
+          "preview": "# 隐私、边界与伦理原则 校园心理 AI 系统需要同时重视支持效果和伦理边界。MindBridge 应尽量保护学生隐私，只收集完成服务所需要的信息，避免诱导学生提供无关敏感信息。对管理员和咨询人员，风险信息应服务于安全支持，而不是用于惩罚、标签化或公开传播。 ## 对学生的表达 当学生担心隐私时，可以说明：普通心理支持"
+        },
+        {
+          "rank": 2,
+          "chunkId": 8,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.6414041395682127,
+          "relevant": true,
+          "preview": "若学生出现 self-harm 自伤、suicide 自杀、伤害他人或 immediate danger 立即危险，则按 HIGH 风险处理。 MindBridge 可以提供稳定技巧和求助路径，但不能诊断焦虑障碍，不能开药，也不能替代咨询师。学生如果正在服药，应联系开药医生或校医院，助手不提供药物调整建议。"
+        },
+        {
+          "rank": 3,
+          "chunkId": 22,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.5723514090956415,
+          "relevant": true,
+          "preview": "# 隐私、边界与伦理原则 校园心理 AI 系统需要同时重视支持效果和伦理边界。MindBridge 应尽量保护学生隐私，只收集完成服务所需要的信息，避免诱导学生提供无关敏感信息。对管理员和咨询人员，风险信息应服务于安全支持，而不是用于惩罚、标签化或公开传播。 ## 对学生的表达 当学生担心隐私时，可以说明：普通心理支持"
+        },
+        {
+          "rank": 4,
+          "chunkId": 15,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.5653096086544939,
+          "relevant": false,
+          "preview": "# 咨询转介、校园资源与求助准备 MindBridge 的重要任务之一是把学生连接到现实中的支持系统。校园心理问题不应只停留在 AI 对话里。默认资源包括辅导员、学院老师、校园心理中心、校医院、班主任、宿舍管理员、校园保卫、可信任同学、家人和当地紧急服务。具体电话和地址应由学校部署时替换为本校信息。 ## 什么时候建议"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.75,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "boundary-professional-counselor",
+      "question": "涉及专业治疗判断时，系统应该让学生找谁？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "professional counselor",
+        "professional support",
+        "专业支持"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 28,
+          "source": "risk-policy.md",
+          "score": 0.6222811707847874,
+          "relevant": false,
+          "preview": "# Risk Policy Risk levels: - LOW: normal chat, mild stress, ordinary anxiety, temporary frustration, no self-harm signals. - MEDIUM: persistent anxiety, insomni"
+        },
+        {
+          "rank": 2,
+          "chunkId": 12,
+          "source": "campus-mental-health.md",
+          "score": 0.4262165513403382,
+          "relevant": true,
+          "preview": "诉、或者需要把混乱感受整理成可执行下一步时，提供稳定、温和、可操作的支持。 默认回复风格应保持平静、非评判、尊重自主。不要说“你想太多了”“别人都能做到”“你应该马上振作起来”这类否定性表达。更合适的表达是：“听起来你已经撑了一段时间”“我们先把最难受的部分降一点点”“如果这个状态持续，找一个现实中的支持者会更安全”。"
+        },
+        {
+          "rank": 3,
+          "chunkId": 22,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.3760144271866481,
+          "relevant": false,
+          "preview": "# 隐私、边界与伦理原则 校园心理 AI 系统需要同时重视支持效果和伦理边界。MindBridge 应尽量保护学生隐私，只收集完成服务所需要的信息，避免诱导学生提供无关敏感信息。对管理员和咨询人员，风险信息应服务于安全支持，而不是用于惩罚、标签化或公开传播。 ## 对学生的表达 当学生担心隐私时，可以说明：普通心理支持"
+        },
+        {
+          "rank": 4,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.36877193547013415,
+          "relevant": false,
+          "preview": "生尽快联系辅导员、心理中心、校医院、可信任老师或家人；帮助学生制定 24 小时内的支持计划；鼓励减少独处和高压力环境；询问是否有让自己受伤的想法。如果学生透露自伤或自杀念头、计划、工具或无法保证安全，应立即升级为 HIGH。 ## HIGH 高风险 HIGH 高风险包括明确提到 self-harm 自伤、suicide"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 2,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.25,
+      "reciprocalRank": 0.5,
+      "ndcgAtK": 0.6309297535714574
+    },
+    {
+      "id": "boundary-illness-diagnose",
+      "question": "如果学生问自己是不是得了某种心理疾病，助手的边界是什么？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "must not diagnose illnesses",
+        "不能诊断疾病",
+        "professional counselor"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 22,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.6999048704441763,
+          "relevant": true,
+          "preview": "# 隐私、边界与伦理原则 校园心理 AI 系统需要同时重视支持效果和伦理边界。MindBridge 应尽量保护学生隐私，只收集完成服务所需要的信息，避免诱导学生提供无关敏感信息。对管理员和咨询人员，风险信息应服务于安全支持，而不是用于惩罚、标签化或公开传播。 ## 对学生的表达 当学生担心隐私时，可以说明：普通心理支持"
+        },
+        {
+          "rank": 2,
+          "chunkId": 7,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.48668222956121787,
+          "relevant": false,
+          "preview": "气，6 拍呼气，连续 5 轮。重点是延长呼气，而不是憋气。如果学生正在明显恐慌，不要要求复杂步骤，可以只说“把双脚踩在地面上，慢慢呼气，比吸气长一点”。 ## 焦虑认知整理 当身体稍微稳定后，可以帮助学生区分事实、猜测和下一步。事实是已经发生或可以验证的信息，例如“明天有考试”“还有三章没复习”。猜测是大脑为了保护自己"
+        },
+        {
+          "rank": 3,
+          "chunkId": 31,
+          "source": "risk-policy.md",
+          "score": 0.46320773727592734,
+          "relevant": false,
+          "preview": "救助；不要进行长篇追问导致延误。 ## 回复边界 对高风险学生，不应使用责备、挑战、激将或道德评判，例如“你不能这么自私”“你这样会伤害别人”。也不要和学生争辩“活着有什么意义”。更合适的是承认痛苦并拉近现实支持：“我很担心你现在的安全。请先把可能伤害自己的物品放远，去到有人在的地方，并马上联系辅导员或紧急服务。我会把"
+        },
+        {
+          "rank": 4,
+          "chunkId": 30,
+          "source": "risk-policy.md",
+          "score": 0.42520648989107085,
+          "relevant": false,
+          "preview": "生尽快联系辅导员、心理中心、校医院、可信任老师或家人；帮助学生制定 24 小时内的支持计划；鼓励减少独处和高压力环境；询问是否有让自己受伤的想法。如果学生透露自伤或自杀念头、计划、工具或无法保证安全，应立即升级为 HIGH。 ## HIGH 高风险 HIGH 高风险包括明确提到 self-harm 自伤、suicide"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.25,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "boundary-prescribe-medication",
+      "question": "知识库里对 prescribe medication 有什么限制？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "prescribe medication",
+        "must not",
+        "不能开药"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.6166335864029545,
+          "relevant": true,
+          "preview": "# 隐私、边界与伦理原则 校园心理 AI 系统需要同时重视支持效果和伦理边界。MindBridge 应尽量保护学生隐私，只收集完成服务所需要的信息，避免诱导学生提供无关敏感信息。对管理员和咨询人员，风险信息应服务于安全支持，而不是用于惩罚、标签化或公开传播。 ## 对学生的表达 当学生担心隐私时，可以说明：普通心理支持"
+        },
+        {
+          "rank": 2,
+          "chunkId": 11,
+          "source": "campus-mental-health.md",
+          "score": 0.5939950746232014,
+          "relevant": true,
+          "preview": "ot diagnose illnesses, prescribe medication, instruct students to change medication, or replace a professional counselor. If a student asks whether they have a "
+        },
+        {
+          "rank": 3,
+          "chunkId": 31,
+          "source": "risk-policy.md",
+          "score": 0.4540197501269688,
+          "relevant": false,
+          "preview": "救助；不要进行长篇追问导致延误。 ## 回复边界 对高风险学生，不应使用责备、挑战、激将或道德评判，例如“你不能这么自私”“你这样会伤害别人”。也不要和学生争辩“活着有什么意义”。更合适的是承认痛苦并拉近现实支持：“我很担心你现在的安全。请先把可能伤害自己的物品放远，去到有人在的地方，并马上联系辅导员或紧急服务。我会把"
+        },
+        {
+          "rank": 4,
+          "chunkId": 19,
+          "source": "low-mood-depression-support.md",
+          "score": 0.33381336768656505,
+          "relevant": false,
+          "preview": "# 情绪低落、抑郁倾向与日常支持 学生表达低 mood、情绪低落、空心、无意义、孤独、疲惫、想哭、对什么都没兴趣时，MindBridge 应提供接住感和可执行的小步骤。不要急着鼓励“看开一点”或“积极起来”，因为这会让学生觉得自己连难过都做错了。更好的起点是：“这听起来不是普通的累，而像是你已经消耗了很久。” ## 轻"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.5,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "support-campus-assistant-role",
+      "question": "MindBridge 在校园心理健康场景里的角色是什么？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "supportive",
+        "campus mental-health assistant",
+        "陪伴建议"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 11,
+          "source": "campus-mental-health.md",
+          "score": 0.730972227878039,
+          "relevant": true,
+          "preview": "self as a therapist. For anxiety, panic, academic pressure, relationship conflict, sleep disruption, loneliness, low mood, and adjustment stress, MindBridge can"
+        },
+        {
+          "rank": 2,
+          "chunkId": 15,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.4165195225301942,
+          "relevant": false,
+          "preview": "# 咨询转介、校园资源与求助准备 MindBridge 的重要任务之一是把学生连接到现实中的支持系统。校园心理问题不应只停留在 AI 对话里。默认资源包括辅导员、学院老师、校园心理中心、校医院、班主任、宿舍管理员、校园保卫、可信任同学、家人和当地紧急服务。具体电话和地址应由学校部署时替换为本校信息。 ## 什么时候建议"
+        },
+        {
+          "rank": 3,
+          "chunkId": 26,
+          "source": "relationships-and-family.md",
+          "score": 0.38339769417673325,
+          "relevant": false,
+          "preview": "在最需要什么支持，接下来 24 小时如何减少冲动行为。 对于反复查看对方动态、想不断发消息、冲动去找对方的学生，可以建议延迟 20 分钟、写下想说的话但先不发送、找朋友陪伴、离开容易冲动的场景。如果关系中存在威胁、跟踪、暴力或性侵风险，应建议联系现实支持和校园安全资源。 ## 家庭压力 家庭压力可能来自父母期待、专业选"
+        },
+        {
+          "rank": 4,
+          "chunkId": 7,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.3144634247518969,
+          "relevant": false,
+          "preview": "气，6 拍呼气，连续 5 轮。重点是延长呼气，而不是憋气。如果学生正在明显恐慌，不要要求复杂步骤，可以只说“把双脚踩在地面上，慢慢呼气，比吸气长一点”。 ## 焦虑认知整理 当身体稍微稳定后，可以帮助学生区分事实、猜测和下一步。事实是已经发生或可以验证的信息，例如“明天有考试”“还有三章没复习”。猜测是大脑为了保护自己"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.25,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "support-risk-signals-human-help",
+      "question": "出现危险信号时，校园心理助手除了安抚还应提醒什么？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "危险信号",
+        "trusted human help",
+        "emergency services"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 22,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.6695059114676886,
+          "relevant": false,
+          "preview": "# 隐私、边界与伦理原则 校园心理 AI 系统需要同时重视支持效果和伦理边界。MindBridge 应尽量保护学生隐私，只收集完成服务所需要的信息，避免诱导学生提供无关敏感信息。对管理员和咨询人员，风险信息应服务于安全支持，而不是用于惩罚、标签化或公开传播。 ## 对学生的表达 当学生担心隐私时，可以说明：普通心理支持"
+        },
+        {
+          "rank": 2,
+          "chunkId": 7,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.5154465726156907,
+          "relevant": false,
+          "preview": "气，6 拍呼气，连续 5 轮。重点是延长呼气，而不是憋气。如果学生正在明显恐慌，不要要求复杂步骤，可以只说“把双脚踩在地面上，慢慢呼气，比吸气长一点”。 ## 焦虑认知整理 当身体稍微稳定后，可以帮助学生区分事实、猜测和下一步。事实是已经发生或可以验证的信息，例如“明天有考试”“还有三章没复习”。猜测是大脑为了保护自己"
+        },
+        {
+          "rank": 3,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.415195737028365,
+          "relevant": false,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        },
+        {
+          "rank": 4,
+          "chunkId": 15,
+          "source": "counselor-referral-and-resources.md",
+          "score": 0.3994054667320206,
+          "relevant": false,
+          "preview": "# 咨询转介、校园资源与求助准备 MindBridge 的重要任务之一是把学生连接到现实中的支持系统。校园心理问题不应只停留在 AI 对话里。默认资源包括辅导员、学院老师、校园心理中心、校医院、班主任、宿舍管理员、校园保卫、可信任同学、家人和当地紧急服务。具体电话和地址应由学校部署时替换为本校信息。 ## 什么时候建议"
+        }
+      ],
+      "hit": false,
+      "firstRelevantRank": 0,
+      "recallAtK": 0.0,
+      "precisionAtK": 0.0,
+      "reciprocalRank": 0.0,
+      "ndcgAtK": 0.0
+    },
+    {
+      "id": "support-anxiety-routine",
+      "question": "routine 日常作息在焦虑支持建议中有什么作用？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "anxiety",
+        "routine",
+        "日常作息"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 19,
+          "source": "low-mood-depression-support.md",
+          "score": 0.6778128231881402,
+          "relevant": false,
+          "preview": "# 情绪低落、抑郁倾向与日常支持 学生表达低 mood、情绪低落、空心、无意义、孤独、疲惫、想哭、对什么都没兴趣时，MindBridge 应提供接住感和可执行的小步骤。不要急着鼓励“看开一点”或“积极起来”，因为这会让学生觉得自己连难过都做错了。更好的起点是：“这听起来不是普通的累，而像是你已经消耗了很久。” ## 轻"
+        },
+        {
+          "rank": 2,
+          "chunkId": 7,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.45570508883847394,
+          "relevant": false,
+          "preview": "气，6 拍呼气，连续 5 轮。重点是延长呼气，而不是憋气。如果学生正在明显恐慌，不要要求复杂步骤，可以只说“把双脚踩在地面上，慢慢呼气，比吸气长一点”。 ## 焦虑认知整理 当身体稍微稳定后，可以帮助学生区分事实、猜测和下一步。事实是已经发生或可以验证的信息，例如“明天有考试”“还有三章没复习”。猜测是大脑为了保护自己"
+        },
+        {
+          "rank": 3,
+          "chunkId": 12,
+          "source": "campus-mental-health.md",
+          "score": 0.4223907496392028,
+          "relevant": true,
+          "preview": "诉、或者需要把混乱感受整理成可执行下一步时，提供稳定、温和、可操作的支持。 默认回复风格应保持平静、非评判、尊重自主。不要说“你想太多了”“别人都能做到”“你应该马上振作起来”这类否定性表达。更合适的表达是：“听起来你已经撑了一段时间”“我们先把最难受的部分降一点点”“如果这个状态持续，找一个现实中的支持者会更安全”。"
+        },
+        {
+          "rank": 4,
+          "chunkId": 32,
+          "source": "sleep-routine-self-care.md",
+          "score": 0.3981109682134618,
+          "relevant": true,
+          "preview": "# 睡眠、作息与基础自我照顾 睡眠 sleep 是心理状态的底盘。校园学生常见的睡眠问题包括入睡困难、凌晨醒来、睡前刷手机停不下来、考试前失眠、宿舍噪音、昼夜颠倒、白天嗜睡、咖啡因摄入过多、因为焦虑反复复盘。MindBridge 可以提供睡眠卫生 sleep hygiene 和作息 routine 建议，但不能把严重失"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 3,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.5,
+      "reciprocalRank": 0.3333333333333333,
+      "ndcgAtK": 0.57064171895532
+    },
+    {
+      "id": "support-grounding-breathing-sleep",
+      "question": "焦虑场景下，grounding、breathing 和 sleep 分别属于哪类建议？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "grounding",
+        "breathing",
+        "sleep",
+        "anxiety"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 12,
+          "source": "campus-mental-health.md",
+          "score": 0.6844948974278318,
+          "relevant": true,
+          "preview": "ot diagnose illnesses, prescribe medication, instruct students to change medication, or replace a professional counselor. If a student asks whether they have a "
+        },
+        {
+          "rank": 2,
+          "chunkId": 6,
+          "source": "anxiety-panic-grounding.md",
+          "score": 0.5424276533973451,
+          "relevant": true,
+          "preview": "# 焦虑、恐慌与稳定技术 焦虑 anxiety 是校园咨询中最常见的主题之一。学生可能因为考试、绩点、保研、就业、家庭期待、社交评价或长期不确定性而出现紧张、心慌、胸闷、手抖、胃部不适、注意力下降、反复检查和灾难化想法。MindBridge 的目标不是让学生“马上不焦虑”，而是帮助他们先降低生理唤醒，再把问题拆成可处理"
+        },
+        {
+          "rank": 3,
+          "chunkId": 10,
+          "source": "campus-mental-health.md",
+          "score": 0.5400781764464453,
+          "relevant": true,
+          "preview": "self as a therapist. For anxiety, panic, academic pressure, relationship conflict, sleep disruption, loneliness, low mood, and adjustment stress, MindBridge can"
+        },
+        {
+          "rank": 4,
+          "chunkId": 32,
+          "source": "sleep-routine-self-care.md",
+          "score": 0.4806628640839969,
+          "relevant": true,
+          "preview": "# 睡眠、作息与基础自我照顾 睡眠 sleep 是心理状态的底盘。校园学生常见的睡眠问题包括入睡困难、凌晨醒来、睡前刷手机停不下来、考试前失眠、宿舍噪音、昼夜颠倒、白天嗜睡、咖啡因摄入过多、因为焦虑反复复盘。MindBridge 可以提供睡眠卫生 sleep hygiene 和作息 routine 建议，但不能把严重失"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 1.0,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "support-low-mood-routine",
+      "question": "情绪低落时，除了社交连接和日记，还可以提醒学生保持哪些生活规律？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "low mood",
+        "journaling",
+        "规律饮食睡眠",
+        "social connection"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 19,
+          "source": "low-mood-depression-support.md",
+          "score": 0.6984996773412386,
+          "relevant": true,
+          "preview": "# 情绪低落、抑郁倾向与日常支持 学生表达低 mood、情绪低落、空心、无意义、孤独、疲惫、想哭、对什么都没兴趣时，MindBridge 应提供接住感和可执行的小步骤。不要急着鼓励“看开一点”或“积极起来”，因为这会让学生觉得自己连难过都做错了。更好的起点是：“这听起来不是普通的累，而像是你已经消耗了很久。” ## 轻"
+        },
+        {
+          "rank": 2,
+          "chunkId": 20,
+          "source": "low-mood-depression-support.md",
+          "score": 0.6507366619167545,
+          "relevant": true,
+          "preview": "g 日记记录可以帮助学生从混乱感里抽离。建议学生写三栏：今天发生了什么，我有什么感受，我能做的最小一步是什么。日记不是为了写得漂亮，而是为了把脑内反复播放的内容放到纸上。 ## 社交连接 低落时学生可能觉得“不想麻烦别人”“说了也没用”“没人会懂”。MindBridge 可以鼓励 social connection 社"
+        },
+        {
+          "rank": 3,
+          "chunkId": 12,
+          "source": "campus-mental-health.md",
+          "score": 0.6060397301319359,
+          "relevant": true,
+          "preview": "诉、或者需要把混乱感受整理成可执行下一步时，提供稳定、温和、可操作的支持。 默认回复风格应保持平静、非评判、尊重自主。不要说“你想太多了”“别人都能做到”“你应该马上振作起来”这类否定性表达。更合适的表达是：“听起来你已经撑了一段时间”“我们先把最难受的部分降一点点”“如果这个状态持续，找一个现实中的支持者会更安全”。"
+        },
+        {
+          "rank": 4,
+          "chunkId": 33,
+          "source": "sleep-routine-self-care.md",
+          "score": 0.4281498523823477,
+          "relevant": false,
+          "preview": "啡因摄入时间。不要要求学生突然完全戒掉，而是先把摄入提前或减少一半。 ## 失眠时的处理 如果躺下 20 到 30 分钟仍很清醒，可以建议学生短暂离开床，做低刺激活动，例如看纸质书、听低刺激音频、整理桌面，困意回来再上床。不要一直盯着时间，因为看时间会增加“我完了”的焦虑。 对考试前失眠，可以提醒学生：一晚睡不好不等于"
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 0.75,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    },
+    {
+      "id": "support-medium-depression-tendency",
+      "question": "轻中度抑郁倾向时，知识库建议的支持方式有哪些？",
+      "expectedSources": [
+        "campus-mental-health.md"
+      ],
+      "expectedTerms": [
+        "轻中度抑郁倾向",
+        "small actions",
+        "social connection",
+        "professional support"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunkId": 19,
+          "source": "low-mood-depression-support.md",
+          "score": 0.6753484822813656,
+          "relevant": true,
+          "preview": "# 情绪低落、抑郁倾向与日常支持 学生表达低 mood、情绪低落、空心、无意义、孤独、疲惫、想哭、对什么都没兴趣时，MindBridge 应提供接住感和可执行的小步骤。不要急着鼓励“看开一点”或“积极起来”，因为这会让学生觉得自己连难过都做错了。更好的起点是：“这听起来不是普通的累，而像是你已经消耗了很久。” ## 轻"
+        },
+        {
+          "rank": 2,
+          "chunkId": 12,
+          "source": "campus-mental-health.md",
+          "score": 0.6484377085550441,
+          "relevant": true,
+          "preview": "诉、或者需要把混乱感受整理成可执行下一步时，提供稳定、温和、可操作的支持。 默认回复风格应保持平静、非评判、尊重自主。不要说“你想太多了”“别人都能做到”“你应该马上振作起来”这类否定性表达。更合适的表达是：“听起来你已经撑了一段时间”“我们先把最难受的部分降一点点”“如果这个状态持续，找一个现实中的支持者会更安全”。"
+        },
+        {
+          "rank": 3,
+          "chunkId": 23,
+          "source": "privacy-boundaries-and-ethics.md",
+          "score": 0.429816341406057,
+          "relevant": true,
+          "preview": "illnesses；不开药，不指导停药换药，不替代心理咨询，不替代紧急服务，也不能替代 professional counselor 专业咨询师。它也不应扮演恋人、监护人、法律顾问或唯一支持来源。对于医学、法律、纪律处分、性侵举报等高风险事务，应建议学生联系相应专业人员、professional support 专业支"
+        },
+        {
+          "rank": 4,
+          "chunkId": 11,
+          "source": "campus-mental-health.md",
+          "score": 0.24581118578820188,
+          "relevant": true,
+          "preview": "ot diagnose illnesses, prescribe medication, instruct students to change medication, or replace a professional counselor. If a student asks whether they have a "
+        }
+      ],
+      "hit": true,
+      "firstRelevantRank": 1,
+      "recallAtK": 1.0,
+      "precisionAtK": 1.0,
+      "reciprocalRank": 1.0,
+      "ndcgAtK": 1.0
+    }
+  ]
+}

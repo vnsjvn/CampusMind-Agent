@@ -1,0 +1,140 @@
+{
+  "createdAt": "2026-08-03T10:04:12.211865",
+  "complete": true,
+  "ragasVersion": "0.4.3",
+  "judgeBaseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "judgeModel": "qwen-plus",
+  "judgeMaxTokens": 4096,
+  "embeddingModel": "text-embedding-v3",
+  "generatorProvider": "ollama",
+  "generatorModel": "mindbridge-qwen2.5-7b-ft:latest",
+  "totalCases": 12,
+  "metrics": {
+    "context_precision": 0.9282407407056326,
+    "context_recall": 1.0,
+    "faithfulness": 0.8739209133945977,
+    "answer_relevancy": 0.8211273849247748
+  },
+  "results": [
+    {
+      "id": "ragas-risk-high-action",
+      "scores": {
+        "context_precision": 0.999999999975,
+        "context_recall": 1.0,
+        "faithfulness": 0.9473684210526315,
+        "answer_relevancy": 0.9056857356275853
+      },
+      "reasons": {}
+    },
+    {
+      "id": "ragas-risk-medium",
+      "scores": {
+        "context_precision": 0.999999999975,
+        "context_recall": 1.0,
+        "faithfulness": 0.8333333333333334,
+        "answer_relevancy": 0.9648996289478026
+      },
+      "reasons": {}
+    },
+    {
+      "id": "ragas-anxiety-grounding",
+      "scores": {
+        "context_precision": 0.9166666666361111,
+        "context_recall": 1.0,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9066968561664689
+      },
+      "reasons": {}
+    },
+    {
+      "id": "ragas-anxiety-referral",
+      "scores": {
+        "context_precision": 0.9166666666361111,
+        "context_recall": 1.0,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7918776561689033
+      },
+      "reasons": {}
+    },
+    {
+      "id": "ragas-sleep-routine",
+      "scores": {
+        "context_precision": 0.99999999995,
+        "context_recall": 1.0,
+        "faithfulness": 0.7777777777777778,
+        "answer_relevancy": 0.8399888423674574
+      },
+      "reasons": {}
+    },
+    {
+      "id": "ragas-insomnia-bed",
+      "scores": {
+        "context_precision": 0.9999999999666667,
+        "context_recall": 1.0,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7332357281669483
+      },
+      "reasons": {}
+    },
+    {
+      "id": "ragas-academic-overload",
+      "scores": {
+        "context_precision": 0.8055555555287036,
+        "context_recall": 1.0,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7382225410376355
+      },
+      "reasons": {}
+    },
+    {
+      "id": "ragas-procrastination",
+      "scores": {
+        "context_precision": 0.49999999995,
+        "context_recall": 1.0,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5207230763921433
+      },
+      "reasons": {}
+    },
+    {
+      "id": "ragas-counseling-referral",
+      "scores": {
+        "context_precision": 0.999999999975,
+        "context_recall": 1.0,
+        "faithfulness": 0.42857142857142855,
+        "answer_relevancy": 0.8529462338082948
+      },
+      "reasons": {}
+    },
+    {
+      "id": "ragas-counseling-preparation",
+      "scores": {
+        "context_precision": 0.99999999995,
+        "context_recall": 1.0,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.996838120732848
+      },
+      "reasons": {}
+    },
+    {
+      "id": "ragas-boundary-medication",
+      "scores": {
+        "context_precision": 0.999999999975,
+        "context_recall": 1.0,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.6623767060772489
+      },
+      "reasons": {}
+    },
+    {
+      "id": "ragas-privacy-boundary",
+      "scores": {
+        "context_precision": 0.99999999995,
+        "context_recall": 1.0,
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.9400374936039615
+      },
+      "reasons": {}
+    }
+  ]
+}

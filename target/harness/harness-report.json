@@ -1,0 +1,158 @@
+{
+  "createdAt": "2026-08-05T03:01:52.614873",
+  "environment": {
+    "databaseUrl": "sqlite:///E:/Java/MindBridge/mindbridge-py/mindbridge-py/target/harness/mindbridge-harness.sqlite3",
+    "aiProvider": "mock",
+    "agentFramework": "custom",
+    "knowledgeVectorEnabled": false
+  },
+  "passed": true,
+  "results": [
+    {
+      "name": "Risk Safety Harness",
+      "passed": true,
+      "details": {
+        "cases": [
+          {
+            "id": "high-risk-cn",
+            "report": true,
+            "assistantChars": 150
+          },
+          {
+            "id": "high-risk-en",
+            "report": true,
+            "assistantChars": 150
+          },
+          {
+            "id": "consult-low",
+            "report": true,
+            "assistantChars": 60
+          },
+          {
+            "id": "normal-chat",
+            "report": false,
+            "assistantChars": 60
+          }
+        ]
+      },
+      "failures": []
+    },
+    {
+      "name": "Agent Routing Harness",
+      "passed": true,
+      "details": {
+        "cases": [
+          {
+            "id": "normal-companion",
+            "intent": "CHAT",
+            "risk": null,
+            "steps": [
+              "MemoryAgent",
+              "SupervisorAgent",
+              "CompanionAgent"
+            ]
+          },
+          {
+            "id": "consult-counselor",
+            "intent": "CONSULT",
+            "risk": "LOW",
+            "steps": [
+              "MemoryAgent",
+              "SupervisorAgent",
+              "KnowledgeAgent",
+              "RiskGuardianAgent",
+              "CounselorAgent"
+            ]
+          },
+          {
+            "id": "risk-counselor",
+            "intent": "RISK",
+            "risk": "HIGH",
+            "steps": [
+              "MemoryAgent",
+              "SupervisorAgent",
+              "KnowledgeAgent",
+              "RiskGuardianAgent",
+              "CounselorAgent"
+            ]
+          }
+        ]
+      },
+      "failures": []
+    },
+    {
+      "name": "Standard Skills Harness",
+      "passed": true,
+      "details": {
+        "skills": [
+          "academic_stress_planning",
+          "anxiety_grounding_support",
+          "counselor_handoff_summary",
+          "high_risk_safety_plan",
+          "referral_resource_guidance",
+          "sleep_routine_support",
+          "supportive_response_baseline"
+        ],
+        "selectedConsultSkills": [
+          "supportive_response_baseline",
+          "referral_resource_guidance",
+          "anxiety_grounding_support",
+          "sleep_routine_support",
+          "academic_stress_planning"
+        ],
+        "selectedHighRiskSkills": [
+          "supportive_response_baseline",
+          "high_risk_safety_plan"
+        ],
+        "handoffChars": 261
+      },
+      "failures": []
+    },
+    {
+      "name": "RAG Harness",
+      "passed": true,
+      "details": {
+        "totalCases": 60,
+        "topK": 4,
+        "recallAtK": 0.9666666666666667,
+        "precisionAtK": 0.6458333333333334,
+        "mrr": 0.9083333333333333,
+        "ndcgAtK": 0.9052540438636218,
+        "hitRate": 0.9666666666666667,
+        "report": "E:\\Java\\MindBridge\\mindbridge-py\\mindbridge-py\\target\\harness\\rag-eval-report.json"
+      },
+      "failures": []
+    },
+    {
+      "name": "API Harness",
+      "passed": true,
+      "details": {
+        "health": {
+          "status": "UP"
+        },
+        "chatStreamChars": 893,
+        "reviewResolution": "REVIEW_APPROVED",
+        "traceMetricsWindow": 1,
+        "knowledgeStatus": {
+          "databaseChunks": 35,
+          "vectorAvailable": false
+        }
+      },
+      "failures": []
+    },
+    {
+      "name": "Tool Queue Harness",
+      "passed": true,
+      "details": {
+        "reportId": 1,
+        "excelJobId": 1,
+        "caseJobId": 2,
+        "alertJobId": 3,
+        "caseId": 1,
+        "excelPath": "E:\\Java\\MindBridge\\mindbridge-py\\mindbridge-py\\target\\harness\\mindbridge-risk-ledger.xlsx",
+        "deadLetterId": 1
+      },
+      "failures": []
+    }
+  ]
+}

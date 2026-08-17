@@ -1,0 +1,1301 @@
+INFO:     Started server process [27292]
+INFO:     Waiting for application startup.
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8010 (Press CTRL+C to quit)
+Tool queue dispatch failed
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1310, in _checkout
+    raise exc.InvalidatePoolError()
+sqlalchemy.exc.InvalidatePoolError: ()
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 782, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "D:\Anaconda\envs\agent\lib\socket.py", line 717, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1344, in _checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1341, in _checkout
+    fairy._connection_record.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 668, in connect
+    self._get_server_information()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 788, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] 你的主机中的软件中止了一个已建立的连接。)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 144, in _loop
+    self._dispatch_once()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 158, in _dispatch_once
+    .all()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2362, in execute
+    return self._execute_internal(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2237, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2106, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3278, in connect
+    return self._connection_cls(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 148, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 2442, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1344, in _checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1341, in _checkout
+    fairy._connection_record.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 668, in connect
+    self._get_server_information()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 788, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] 你的主机中的软件中止了一个已建立的连接。)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Tool queue dispatch failed
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1310, in _checkout
+    raise exc.InvalidatePoolError()
+sqlalchemy.exc.InvalidatePoolError: ()
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 649, in connect
+    sock = socket.create_connection(
+  File "D:\Anaconda\envs\agent\lib\socket.py", line 857, in create_connection
+    raise err
+  File "D:\Anaconda\envs\agent\lib\socket.py", line 845, in create_connection
+    sock.connect(sa)
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1344, in _checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1341, in _checkout
+    fairy._connection_record.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '192.168.100.128' ([WinError 10053] 你的主机中的软件中止了一个已建立的连接。)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 144, in _loop
+    self._dispatch_once()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 158, in _dispatch_once
+    .all()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2362, in execute
+    return self._execute_internal(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2237, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2106, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3278, in connect
+    return self._connection_cls(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 148, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 2442, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1344, in _checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1341, in _checkout
+    fairy._connection_record.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 716, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '192.168.100.128' ([WinError 10053] 你的主机中的软件中止了一个已建立的连接。)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Tool queue dispatch failed
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 649, in connect
+    sock = socket.create_connection(
+  File "D:\Anaconda\envs\agent\lib\socket.py", line 857, in create_connection
+    raise err
+  File "D:\Anaconda\envs\agent\lib\socket.py", line 845, in create_connection
+    sock.connect(sa)
+OSError: [WinError 10065] 套接字操作尝试一个无法连接的主机。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 717, in checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 715, in checkout
+    dbapi_connection = rec.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '192.168.100.128' ([WinError 10065] 套接字操作尝试一个无法连接的主机。)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 144, in _loop
+    self._dispatch_once()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 158, in _dispatch_once
+    .all()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2362, in execute
+    return self._execute_internal(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2237, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2106, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3278, in connect
+    return self._connection_cls(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 148, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 2442, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 717, in checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 715, in checkout
+    dbapi_connection = rec.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 716, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '192.168.100.128' ([WinError 10065] 套接字操作尝试一个无法连接的主机。)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Tool queue dispatch failed
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 649, in connect
+    sock = socket.create_connection(
+  File "D:\Anaconda\envs\agent\lib\socket.py", line 857, in create_connection
+    raise err
+  File "D:\Anaconda\envs\agent\lib\socket.py", line 845, in create_connection
+    sock.connect(sa)
+OSError: [WinError 10065] 套接字操作尝试一个无法连接的主机。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 717, in checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 715, in checkout
+    dbapi_connection = rec.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '192.168.100.128' ([WinError 10065] 套接字操作尝试一个无法连接的主机。)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 144, in _loop
+    self._dispatch_once()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 158, in _dispatch_once
+    .all()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2362, in execute
+    return self._execute_internal(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2237, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2106, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3278, in connect
+    return self._connection_cls(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 148, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 2442, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 717, in checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 715, in checkout
+    dbapi_connection = rec.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 716, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '192.168.100.128' ([WinError 10065] 套接字操作尝试一个无法连接的主机。)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Tool queue dispatch failed
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 649, in connect
+    sock = socket.create_connection(
+  File "D:\Anaconda\envs\agent\lib\socket.py", line 857, in create_connection
+    raise err
+  File "D:\Anaconda\envs\agent\lib\socket.py", line 845, in create_connection
+    sock.connect(sa)
+OSError: [WinError 10065] 套接字操作尝试一个无法连接的主机。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 717, in checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 715, in checkout
+    dbapi_connection = rec.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '192.168.100.128' ([WinError 10065] 套接字操作尝试一个无法连接的主机。)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 144, in _loop
+    self._dispatch_once()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 158, in _dispatch_once
+    .all()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2362, in execute
+    return self._execute_internal(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2237, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2106, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3278, in connect
+    return self._connection_cls(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 148, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 2442, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 717, in checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 715, in checkout
+    dbapi_connection = rec.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 716, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '192.168.100.128' ([WinError 10065] 套接字操作尝试一个无法连接的主机。)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Tool queue dispatch failed
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1310, in _checkout
+    raise exc.InvalidatePoolError()
+sqlalchemy.exc.InvalidatePoolError: ()
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1344, in _checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1341, in _checkout
+    fairy._connection_record.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 668, in connect
+    self._get_server_information()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 144, in _loop
+    self._dispatch_once()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 158, in _dispatch_once
+    .all()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2362, in execute
+    return self._execute_internal(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2237, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2106, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3278, in connect
+    return self._connection_cls(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 148, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 2442, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1344, in _checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1341, in _checkout
+    fairy._connection_record.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 668, in connect
+    self._get_server_information()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Tool queue dispatch failed
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1310, in _checkout
+    raise exc.InvalidatePoolError()
+sqlalchemy.exc.InvalidatePoolError: ()
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1344, in _checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1341, in _checkout
+    fairy._connection_record.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 668, in connect
+    self._get_server_information()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 144, in _loop
+    self._dispatch_once()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 158, in _dispatch_once
+    .all()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2362, in execute
+    return self._execute_internal(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2237, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2106, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3278, in connect
+    return self._connection_cls(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 148, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 2442, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1344, in _checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1341, in _checkout
+    fairy._connection_record.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 668, in connect
+    self._get_server_information()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Tool queue dispatch failed
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1310, in _checkout
+    raise exc.InvalidatePoolError()
+sqlalchemy.exc.InvalidatePoolError: ()
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1344, in _checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1341, in _checkout
+    fairy._connection_record.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 668, in connect
+    self._get_server_information()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 144, in _loop
+    self._dispatch_once()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 158, in _dispatch_once
+    .all()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2362, in execute
+    return self._execute_internal(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2237, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2106, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3278, in connect
+    return self._connection_cls(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 148, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 2442, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1344, in _checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1341, in _checkout
+    fairy._connection_record.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 668, in connect
+    self._get_server_information()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Tool queue dispatch failed
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 717, in checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 715, in checkout
+    dbapi_connection = rec.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 668, in connect
+    self._get_server_information()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 144, in _loop
+    self._dispatch_once()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 158, in _dispatch_once
+    .all()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2362, in execute
+    return self._execute_internal(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2237, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2106, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3278, in connect
+    return self._connection_cls(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 148, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 2442, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 717, in checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 715, in checkout
+    dbapi_connection = rec.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 668, in connect
+    self._get_server_information()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Tool queue dispatch failed
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 717, in checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 715, in checkout
+    dbapi_connection = rec.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 668, in connect
+    self._get_server_information()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 144, in _loop
+    self._dispatch_once()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 158, in _dispatch_once
+    .all()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2362, in execute
+    return self._execute_internal(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2237, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2106, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3278, in connect
+    return self._connection_cls(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 148, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 2442, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 717, in checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 715, in checkout
+    dbapi_connection = rec.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 668, in connect
+    self._get_server_information()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Tool queue dispatch failed
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1310, in _checkout
+    raise exc.InvalidatePoolError()
+sqlalchemy.exc.InvalidatePoolError: ()
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1344, in _checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1341, in _checkout
+    fairy._connection_record.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 668, in connect
+    self._get_server_information()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 144, in _loop
+    self._dispatch_once()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 158, in _dispatch_once
+    .all()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2362, in execute
+    return self._execute_internal(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2237, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2106, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3278, in connect
+    return self._connection_cls(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 148, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 2442, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1344, in _checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1341, in _checkout
+    fairy._connection_record.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 668, in connect
+    self._get_server_information()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Tool queue dispatch failed
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 717, in checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 715, in checkout
+    dbapi_connection = rec.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 668, in connect
+    self._get_server_information()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 144, in _loop
+    self._dispatch_once()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\app\services\tool_queue.py", line 158, in _dispatch_once
+    .all()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2362, in execute
+    return self._execute_internal(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2237, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 2106, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3278, in connect
+    return self._connection_cls(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 148, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 2442, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\base.py", line 3302, in raw_connection
+    return self.pool.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 717, in checkout
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 715, in checkout
+    dbapi_connection = rec.get_connection()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 837, in get_connection
+    self.__connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\sqlalchemy\engine\default.py", line 621, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 668, in connect
+    self._get_server_information()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "E:\Java\MindBridge\mindbridge-py\mindbridge-py\.venv310\lib\site-packages\pymysql\connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)

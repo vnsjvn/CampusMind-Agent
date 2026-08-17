@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MindBridge 学生端</title>
+  <link rel="stylesheet" href="/styles.css?v=role-split-20260617">
+</head>
+<body class="student-page">
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo student-logo">MB</div>
+      <div>
+        <p class="eyebrow">STUDENT COMPANION</p>
+        <h1>MindBridge 学生心理陪伴</h1>
+      </div>
+    </div>
+    <div class="status-row">
+      <span id="serviceState" class="pill warn">连接中</span>
+      <span id="modelState" class="pill warn">模型读取中</span>
+      <div id="accountBadge" class="account">
+        <strong id="activeAccount">学生</strong>
+        <span>学生端</span>
+      </div>
+      <button id="switchAccount" class="dark-btn" type="button">退出</button>
+    </div>
+  </header>
+
+  <main class="student-layout">
+    <aside class="student-rail">
+      <section class="panel">
+        <p class="panel-label">QUICK SIGNAL</p>
+        <button class="signal" type="button" data-quick="我最近压力很大，晚上总是睡不着。">压力失眠</button>
+        <button class="signal" type="button" data-quick="我感觉很焦虑，考试前完全静不下来。">焦虑倾诉</button>
+        <button class="signal" type="button" data-quick="我最近情绪很低落，不太想和别人说话。">低落求助</button>
+        <button class="signal" type="button" data-quick="我想聊聊最近和家人的矛盾。">关系困扰</button>
+      </section>
+
+      <section class="panel">
+        <p class="panel-label">CARE LOOP</p>
+        <ol class="loop-list">
+          <li>理解当前表达</li>
+          <li>识别压力与风险</li>
+          <li>检索校内支持知识</li>
+          <li>生成陪伴式回应</li>
+          <li>必要时建议线下求助</li>
+        </ol>
+      </section>
+    </aside>
+
+    <section class="chat-panel student-chat">
+      <div class="chat-head">
+        <div>
+          <p class="panel-label">STUDENT CHAT</p>
+          <h2>心理陪伴对话</h2>
+        </div>
+        <span id="sessionBadge" class="pill">READY</span>
+      </div>
+      <div id="messages" class="messages">
+        <div class="empty">
+          <strong>从一段真实表达开始</strong>
+          <p>你可以说压力、睡眠、关系、考试，也可以只写下现在最卡住的一句话。</p>
+        </div>
+      </div>
+      <form id="chatForm" class="composer">
+        <textarea id="messageInput" placeholder="写下你现在想说的话..." rows="3"></textarea>
+        <div class="composer-actions">
+          <button id="newSession" class="ghost" type="button">新会话</button>
+          <button id="sendButton" class="primary" type="submit">发送</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="/student.js?v=role-split-20260617"></script>
+</body>
+</html>

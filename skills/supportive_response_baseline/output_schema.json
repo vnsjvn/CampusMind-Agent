@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "minLength": 20,
+  "maxLength": 1200,
+  "maxQuestions": 1,
+  "forbiddenTerms": [
+    "你的风险等级是",
+    "你的心理报告分数",
+    "我确诊你"
+  ]
+}

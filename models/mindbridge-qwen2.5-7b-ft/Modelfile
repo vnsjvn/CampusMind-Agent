@@ -1,0 +1,24 @@
+FROM ./mindbridge-qwen2.5-7b-ft-q4_k_m.gguf
+
+TEMPLATE """{{ if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}{{ range .Messages }}<|im_start|>{{ .Role }}
+{{ .Content }}<|im_end|>
+{{ end }}<|im_start|>assistant
+"""
+
+SYSTEM """
+你是 MindBridge 校园心理关怀智能体，由 Qwen2.5-7B 面向校园心理陪伴场景适配而来。
+你需要保持温和、稳定、非评判的表达风格，优先保护学生安全。
+当学生表达普通问题时，正常回答，不强行心理测评。
+当学生表达情绪困扰时，先共情，再给出具体、可执行的小步骤。
+当学生表达自伤、自杀、伤人等高风险信号时，不提供危险细节，鼓励其立即联系身边可信任的人、学校辅导员/心理中心或当地紧急救助。
+不要向学生输出后台风险等级、心理报告、评分或诊断结论。
+"""
+
+PARAMETER temperature 0.35
+PARAMETER top_p 0.85
+PARAMETER repeat_penalty 1.12
+PARAMETER num_predict 512
+PARAMETER stop "<|im_start|>"
+PARAMETER stop "<|im_end|>"

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MindBridge 管理员端</title>
+  <link rel="stylesheet" href="/styles.css?v=review-pagination-20260804">
+</head>
+<body class="admin-page">
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo admin-logo">MB</div>
+      <div>
+        <p class="eyebrow">COUNSELOR ADMIN</p>
+        <h1>MindBridge 咨询后台</h1>
+      </div>
+    </div>
+    <div class="status-row">
+      <span id="serviceState" class="pill warn">连接中</span>
+      <span id="modelState" class="pill warn">模型读取中</span>
+      <div id="accountBadge" class="account">
+        <strong id="activeAccount">管理员</strong>
+        <span>管理员端</span>
+      </div>
+      <button id="refreshAdmin" class="ghost" type="button">刷新</button>
+      <button id="switchAccount" class="dark-btn" type="button">退出</button>
+    </div>
+  </header>
+
+  <main class="admin-layout">
+    <section class="admin-grid" aria-label="后台指标">
+      <div class="metric">
+        <span>报告数</span>
+        <strong id="metricReports">0</strong>
+      </div>
+      <div class="metric">
+        <span>高风险</span>
+        <strong id="metricHigh">0</strong>
+      </div>
+      <div class="metric">
+        <span>个案数</span>
+        <strong id="metricCases">0</strong>
+      </div>
+      <div class="metric">
+        <span>Excel 台账</span>
+        <strong id="metricExcel">0</strong>
+      </div>
+      <div class="metric">
+        <span>预警记录</span>
+        <strong id="metricAlerts">0</strong>
+      </div>
+    </section>
+
+    <section class="panel trace-panel" aria-labelledby="traceMetricsTitle">
+      <div class="section-head">
+        <div>
+          <p class="panel-label">AGENT OBSERVABILITY</p>
+          <h2 id="traceMetricsTitle">Runtime &amp; Tool Trace</h2>
+        </div>
+        <span id="traceMetricsState" class="hint">Loading metrics...</span>
+      </div>
+      <div class="trace-kpis">
+        <div class="trace-kpi"><span>End-to-end completed</span><strong id="traceCompleted">--</strong></div>
+        <div class="trace-kpi"><span>Runtime P95</span><strong id="traceRuntimeP95">--</strong></div>
+        <div class="trace-kpi"><span>Model TTFT P95</span><strong id="traceTtftP95">--</strong></div>
+        <div class="trace-kpi"><span>Tool success rate</span><strong id="traceToolSuccess">--</strong></div>
+      </div>
+      <div class="trace-details">
+        <div>
+          <h3>Agent latency P95</h3>
+          <div id="traceAgentLatency" class="trace-bars"></div>
+        </div>
+        <div>
+          <h3>Failure stages</h3>
+          <div id="traceFailureStages" class="trace-bars"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel review-panel" aria-labelledby="reviewTasksTitle">
+      <div class="section-head">
+        <div>
+          <p class="panel-label">HUMAN REVIEW</p>
+          <h2 id="reviewTasksTitle">Response Safety Reviews</h2>
+        </div>
+        <div class="review-filter-row">
+          <label for="reviewStatusFilter">Status</label>
+          <select id="reviewStatusFilter">
+            <option value="ALL">All</option>
+            <option value="PENDING_REVIEW">Pending</option>
+            <option value="REVIEW_APPROVED">Approved</option>
+            <option value="REVIEW_REJECTED">Rejected</option>
+          </select>
+          <span id="reviewTasksState" class="hint">Loading reviews...</span>
+        </div>
+      </div>
+      <div id="reviewTasks" class="review-tasks"></div>
+      <nav class="review-pagination" aria-label="Response review pages">
+        <button id="reviewPreviousPage" class="ghost" type="button">Previous</button>
+        <span id="reviewPageState" class="hint">Page 1 of 1</span>
+        <button id="reviewNextPage" class="ghost" type="button">Next</button>
+      </nav>
+    </section>
+
+    <section class="admin-columns">
+      <div class="admin-stack">
+        <section class="panel">
+          <div class="section-head">
+            <div>
+              <p class="panel-label">CASES</p>
+              <h2>风险个案闭环</h2>
+            </div>
+          </div>
+          <div id="cases" class="cases"></div>
+        </section>
+
+        <section class="panel">
+          <div class="section-head">
+            <div>
+              <p class="panel-label">KNOWLEDGE BASE</p>
+              <h2>RAG 知识库维护</h2>
+            </div>
+            <span id="knowledgeState" class="hint">等待读取</span>
+          </div>
+          <form id="knowledgeUploadForm" class="upload-row">
+            <input id="knowledgeFile" type="file" accept=".pdf,.md,.markdown,.txt,application/pdf,text/markdown,text/plain">
+            <button class="primary" type="submit">上传入库</button>
+          </form>
+          <div class="admin-actions">
+            <button id="rebuildVector" class="ghost" type="button">重建向量索引</button>
+            <button id="backupVector" class="ghost" type="button">备份向量索引</button>
+          </div>
+          <p id="knowledgeUploadState" class="hint">支持 PDF、Markdown、txt 文件</p>
+        </section>
+      </div>
+
+      <div class="admin-stack">
+        <section class="panel">
+          <div class="section-head">
+            <div>
+              <p class="panel-label">REPORTS</p>
+              <h2>心理风险与咨询报告</h2>
+            </div>
+          </div>
+          <div id="reports" class="reports"></div>
+        </section>
+
+        <section class="panel">
+          <div class="section-head">
+            <div>
+              <p class="panel-label">SESSION ARCHIVE</p>
+              <h2>会话档案审阅</h2>
+            </div>
+            <span id="conversationState" class="hint">选择一条报告查看</span>
+          </div>
+          <div id="conversationDetail" class="conversation-detail">
+            <div class="empty small">
+              <strong>未选择报告</strong>
+              <p>点击上方任意报告后，这里只读展示历史消息。</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="reviewDialog" class="review-dialog">
+    <form id="reviewResolutionForm">
+      <input id="reviewTaskId" type="hidden">
+      <input id="reviewDecision" type="hidden">
+      <p class="panel-label">HUMAN REVIEW DECISION</p>
+      <h2 id="reviewDialogTitle">Resolve response review</h2>
+      <label for="reviewApprovalToken">Approval token</label>
+      <input id="reviewApprovalToken" type="password" required autocomplete="off">
+      <label for="reviewNote">Review note</label>
+      <textarea id="reviewNote" maxlength="1000" rows="4" placeholder="Optional staff-only note"></textarea>
+      <p id="reviewDialogState" class="hint"></p>
+      <div class="review-dialog-actions">
+        <button id="cancelReview" class="ghost" type="button">Cancel</button>
+        <button id="submitReview" class="primary" type="submit">Confirm</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="/admin.js?v=review-pagination-20260804"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MindBridge 登录</title>
+  <link rel="stylesheet" href="/styles.css?v=role-split-20260617">
+</head>
+<body class="portal-page">
+  <header class="topbar portal-topbar">
+    <div class="brand">
+      <div class="logo">MB</div>
+      <div>
+        <p class="eyebrow">MIND BRIDGE AGENT</p>
+        <h1>MindBridge 校园心理智能体</h1>
+      </div>
+    </div>
+    <div class="status-row">
+      <span id="serviceState" class="pill warn">连接中</span>
+      <span id="modelState" class="pill warn">模型读取中</span>
+    </div>
+  </header>
+
+  <main class="login-shell">
+    <section class="login-panel">
+      <p class="panel-label">ACCOUNT GATE</p>
+      <h2>选择账号进入对应工作台</h2>
+      <form id="loginForm" class="login-form">
+        <label>
+          <span>用户名</span>
+          <input id="username" value="student" autocomplete="username">
+        </label>
+        <label>
+          <span>密码</span>
+          <input id="password" value="student123" type="password" autocomplete="current-password">
+        </label>
+        <button class="primary full" type="submit">登录并进入</button>
+        <p id="loginState" class="hint">学生：student / student123，管理员：admin / admin123</p>
+      </form>
+    </section>
+
+    <section class="entry-grid" aria-label="角色入口说明">
+      <article class="entry-card student-entry">
+        <span class="entry-kicker">STUDENT</span>
+        <h3>学生端</h3>
+        <p>只提供心理陪伴对话、快捷表达和会话状态。</p>
+      </article>
+      <article class="entry-card admin-entry">
+        <span class="entry-kicker">COUNSELOR ADMIN</span>
+        <h3>管理员端</h3>
+        <p>只提供风险报告、个案闭环、知识库维护和系统数据。</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="/app.js?v=role-split-20260617"></script>
+</body>
+</html>

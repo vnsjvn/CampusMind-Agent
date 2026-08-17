@@ -1,0 +1,16 @@
+{
+  "type": "string",
+  "minLength": 40,
+  "maxLength": 1000,
+  "maxQuestions": 1,
+  "requiredTerms": [
+    "联系"
+  ],
+  "requiredFallbacks": {
+    "联系": "请立即联系身边可信任的人、学校心理中心或当地紧急服务。"
+  },
+  "forbiddenTerms": [
+    "你的风险等级是HIGH",
+    "保证绝对保密"
+  ]
+}
