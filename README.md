@@ -1,4 +1,4 @@
-# MindBridge
+# CampusMind-Agent
 
 ## 核心能力
 
